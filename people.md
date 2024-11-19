@@ -47,9 +47,9 @@ All PhD positions are funded by SISSA
 
 Some former members are participating as regular guests to our group activities:
 
-- Mattia Bernetti (Università di Pesaro e Urbino, Italy)
-- Thorben Fröhlking (University of Geneva, Switzerland)
-- Valerio Piomponi (Area di Ricerca, Trieste)
+- Mattia Bernetti (Università degli Studi di Urbino Carlo Bo, Italy)
+- Thorben Fröhlking (Université de Genève, Switzerland)
+- Valerio Piomponi (Area Science Park, Trieste, Italy)
 
 ### Previous members
 
