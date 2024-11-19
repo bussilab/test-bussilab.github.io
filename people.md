@@ -24,3 +24,4 @@ Some former members are participating as regular guests to our group activities:
 - Mattia Bernetti (now Researcher at Università di Pesaro e Urbino, Italy)
 - Thorbem Fröhlking (now post-doc at University of Geneva, Switzerland)
 - Valerio Piomponi (now post-doc at Area di Ricerca, Trieste)
+
