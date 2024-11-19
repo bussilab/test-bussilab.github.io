@@ -1,5 +1,5 @@
 ---
-title: Join us
+title: Join Us
 ---
 
 There are different ways to join our activities.
