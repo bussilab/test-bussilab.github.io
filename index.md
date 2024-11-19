@@ -1,7 +1,7 @@
 
 This is the website of the group lead by Giovanni Bussi at SISSA.
 
-Look for us on:
+Follow us on:
 
 - Twitter/X: [@bussilab](https://x.com/bussilab)
 - Bluesky: [@bussilab.bsky.social](https://bsky.app/profile/bussilab.bsky.social)
