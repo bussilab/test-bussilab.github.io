@@ -1,3 +1,7 @@
+---
+title: Funding
+---
+
 Our research group has been/is currently funded by the following sources:
 - [SISSA](https://www.sissa.it/), institutional funds
 - [ERC](https://erc.europa.eu/), Starting Grant 2012

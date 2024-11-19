@@ -1,3 +1,7 @@
+---
+title: People
+---
+
 ### Principal investigator
 
 Giovanni Bussi (Full Professor at [SISSA](https://www.sissa.it/))
