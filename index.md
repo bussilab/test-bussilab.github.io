@@ -7,14 +7,14 @@ of molecular biology.
 Stay updated with our latest news and research.
 
 <div style="display: flex; gap: 15px; margin-top: 10px;">
-  <a href="https://x.com/bussilab" target="_blank" aria-label="Twitter">
-    <i class="fab fa-twitter" style="font-size: 1.5rem;"></i>
+  <a href="https://github.com/bussilab" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github" style="font-size: 1.5rem;"></i>
   </a>
   <a href="https://bsky.app/profile/bussilab.bsky.social" target="_blank" aria-label="Bluesky">
     <i class="fas fa-cloud" style="font-size: 1.5rem;"></i>
   </a>
-  <a href="https://github.com/bussilab" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+  <a href="https://x.com/bussilab" target="_blank" aria-label="Twitter">
+    <i class="fab fa-twitter" style="font-size: 1.5rem;"></i>
   </a>
 </div>
 
