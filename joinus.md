@@ -2,23 +2,30 @@
 title: Join Us
 ---
 
-There are different ways to join our activities.
+## PhD Fellowships
 
-## PhD fellowship
+Join the [Physics and Chemistry of Biological Systems PhD program](https://www.sissa.it/sbp/) at [SISSA](https://www.sissa.it), which offers 4-year fully funded positions. 
 
-The PhD program in [Physics and Chemistry of Biological Systems](https://www.sissa.it/sbp/) at [SISSA](https://www.sissa.it)
-offers regular 4-years fully funded PhD positions. Entrance exams are typically in spring and early fall, but the
-exact schedule is subject to changes. Once you are selected for this PhD program, you will have the opportunity to follow
-approximately 9 months of lectures and then join the group of one of the principal investigators, including ours.
-For openings, follow us on [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
+- **Schedule**: Entrance exams are typically held in spring and summer (dates may vary). 
+- **Program Structure**: Selected candidates will attend approximately 9 months of lectures before choosing among the available research groups, including ours.
 
-## Post-doctoral fellowship
+For updates, follow us on [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
 
-We are happy to support you if you wish to apply for external funds.
-So far, we managed to host two MSCA and one EMBO fellowships.
-For openings, follow us on [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
+---
 
-## Undergraduate
+## Post-doctoral Fellowships
 
-We are involved in the Master in [Physics of Complex Systems](http://www.pcs.polito.it/educational_tracks/international_track)
-and we can host internships. Please get in touch in due time.
+We welcome applications from post-doctoral researchers. Our group is happy to support you in applying for external funding.
+
+- **Previous Fellowships**: We have hosted two MSCA fellows and one EMBO fellow. 
+- **Internal Funding**: We routinely open positions funded by internal grants.
+
+For updates, follow us on [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
+
+---
+
+## Undergraduate Projects
+
+We are involved in the Master in [Physics of Complex Systems](http://www.pcs.polito.it/educational_tracks/international_track), offering opportunities for internships to students in this program and external undergraduate students.  
+
+- **How to Apply**: Please reach out early to discuss potential projects and timelines.
