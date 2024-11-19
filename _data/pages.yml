@@ -3,5 +3,7 @@ pages:
   url: /
 - title: People
   url: people
+- title: Join us
+  url: joinus
 - title: Funding
   url: funding
