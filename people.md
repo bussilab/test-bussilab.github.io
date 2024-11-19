@@ -33,15 +33,15 @@ All PhD positions are funded by SISSA
   [ORCID](https://orcid.org/0000-0002-7504-9840)
   )
 - Elisa Posani (co-supervision with Alessandra Magistrato)
-- Salvatore Di Marco (co-supervision with Alessandra Magistrato)
+- Salvatore Di Marco
   (
   [ORCID](https://orcid.org/0009-0008-5365-9446) |
   [Scholar](https://scholar.google.com/citations?hl=en&user=5twQfMUAAAAJ)
-  )
-- Giuseppe Sacco (co-supervision with Guido Sanguinetti)
+  ) (co-supervision with Alessandra Magistrato)
+- Giuseppe Sacco
   (
   [ORCID](https://orcid.org/0009-0001-0594-8349)
-  )
+  ) (co-supervision with Guido Sanguinetti)
 
 ### Guests
 
