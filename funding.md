@@ -12,9 +12,9 @@ Our research has been funded by the following sources:
 - [FIRB](https://firb.miur.it/), Futuro in Ricerca 2010
 
 
-<img src="logos/SISSA.png" width="150"/>
-<img src="logos/PNRR.svg" width="150"/> 
-<img src="logos/EuropeanCommission.svg" width="150"/> 
-<img src="logos/EMBO.svg" width="150"/> 
+<img src="logos/SISSA.png" width="100"/>
+<img src="logos/PNRR.svg" width="300"/> 
+<img src="logos/EuropeanCommission.svg" width="300"/> 
+<img src="logos/EMBO.svg" width="200"/> 
 <img src="logos/ERC.svg" width="150"/> 
 
