@@ -18,9 +18,13 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% assign current_path = page.path | remove: '.md' %}
+      {% if current_path == 'index' %}
+        {% assign current_path = '/' %}
+      {% endif %}
       {% for item in site.data.pages.pages %}
-        {% if page.url == item.url %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}" class="btn"><font color="white">{{ item.title }}</font></a>
+        {% if current_path == item.url %}
+        <a href="{{ item.url | absolute_url }}" class="btn" style="color: #333; background-color: white;">{{ item.title }}</a>
         {% elsif item.url contains 'http://' or item.url contains 'https://' %}
         <a href="{{ item.url }}" class="btn" target="_blank">{{ item.title }}</a>
         {% else %}
