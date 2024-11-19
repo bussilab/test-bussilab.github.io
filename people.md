@@ -2,7 +2,7 @@
 title: People
 ---
 
-### Principal investigator
+## Principal investigator
 
 Giovanni Bussi (Full Professor)
 (
@@ -11,7 +11,7 @@ Giovanni Bussi (Full Professor)
 )
 
 
-### Post-doctoral researchers
+## Post-doctoral researchers
 
 - Tomàs F. D. Silva (EMBO) 
   (
@@ -24,7 +24,7 @@ Giovanni Bussi (Full Professor)
   [Scholar](https://scholar.google.com/citations?user=ovntaA8AAAAJ)
   )
 
-### PhD students
+## PhD students
 
 All PhD positions are funded by SISSA
 
@@ -43,7 +43,7 @@ All PhD positions are funded by SISSA
   [ORCID](https://orcid.org/0009-0001-0594-8349)
   ) (co-supervision with Guido Sanguinetti)
 
-### Guests
+## Guests
 
 Some former members are participating as regular guests to our group activities:
 
@@ -51,7 +51,7 @@ Some former members are participating as regular guests to our group activities:
 - Thorben Fröhlking (Université de Genève, Switzerland)
 - Valerio Piomponi (Area Science Park, Trieste, Italy)
 
-### Previous members
+## Previous members
 
 - Valerio Piomponi, PhD student, SISSA (2020--2023)
 - Thorben Fröhlking, PhD student, SISSA (2019--2022)
