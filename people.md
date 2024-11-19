@@ -21,17 +21,17 @@ Giovanni Bussi (Full Professor at [SISSA](https://www.sissa.it/))
 ### Guests
 
 Some former members are participating as regular guests to our group activities:
-- Mattia Bernetti (now Researcher at Università di Pesaro e Urbino, Italy)
-- Thorben Fröhlking (now post-doc at University of Geneva, Switzerland)
-- Valerio Piomponi (now post-doc at Area di Ricerca, Trieste)
+- Mattia Bernetti (Università di Pesaro e Urbino, Italy)
+- Thorben Fröhlking (University of Geneva, Switzerland)
+- Valerio Piomponi (Area di Ricerca, Trieste)
 
 ### Previous members
 
 - Valerio Piomponi, PhD student, SISSA (2020--2023)
-- Thorben Fröhlking, PhD student, SISSA (2019-2022)
+- Thorben Fröhlking, PhD student, SISSA (2019--2022)
 - Mattia Bernetti, post doc, SISSA (2018--2021)
 - Vittorio Del Tatto (undergraduate student, University of Trento, 2021)
-- Nicola Calonaci, PhD student, SISSA (2017-2020)
+- Nicola Calonaci, PhD student, SISSA (2017--2020)
 - Francesca Cuturello, PhD student, SISSA (2016--2019)
 - Sabine Reisser, post doc, SISSA (2015--2018)
 - Vojtěch Mlýnský, post doc, SISSA (2015--2017)
