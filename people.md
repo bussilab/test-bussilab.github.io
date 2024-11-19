@@ -5,24 +5,48 @@ title: People
 ### Principal investigator
 
 Giovanni Bussi (Full Professor)
-([Scholar](https://scholar.google.com/citations?user=8qk_P2YAAAAJ) | [ORCID](https://orcid.org/0000-0001-9216-5782))
+(
+[ORCID](https://orcid.org/0000-0001-9216-5782) |
+[Scholar](https://scholar.google.com/citations?user=8qk_P2YAAAAJ)
+)
 
 
 ### Post-doctoral researchers
 
-- Tomàs F. D. Silva (funded by a [EMBO post-doctoral fellowship](https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/))
-- Olivier Languin-Cattoën (funded by [PRIN[(https://bussilab.github.io/prin2022/))
+- Tomàs F. D. Silva (EMBO) 
+  (
+  [ORCID](https://orcid.org/0000-0003-4608-2673) |
+  [Scholar](https://scholar.google.com/citations?user=WHFaAK8AAAAJ)
+  )
+- Olivier Languin-Cattoën (PRIN, MSCA)
+  (
+  [ORCID](https://orcid.org/0000-0002-0486-9841) |
+  [Scholar](https://scholar.google.com/citations?user=ovntaA8AAAAJ)
+  )
 
 ### PhD students
 
+All PhD positions are funded by SISSA
+
 - Ivan Gilardoni
+  (
+  [ORCID](https://orcid.org/0000-0002-7504-9840)
+  )
 - Elisa Posani (co-supervision with Alessandra Magistrato)
 - Salvatore Di Marco (co-supervision with Alessandra Magistrato)
+  (
+  [ORCID](https://orcid.org/0009-0008-5365-9446) |
+  [Scholar](https://scholar.google.com/citations?hl=en&user=5twQfMUAAAAJ)
+  )
 - Giuseppe Sacco (co-supervision with Guido Sanguinetti)
+  (
+  [ORCID](https://orcid.org/0009-0001-0594-8349)
+  )
 
 ### Guests
 
 Some former members are participating as regular guests to our group activities:
+
 - Mattia Bernetti (Università di Pesaro e Urbino, Italy)
 - Thorben Fröhlking (University of Geneva, Switzerland)
 - Valerio Piomponi (Area di Ricerca, Trieste)
@@ -39,7 +63,7 @@ Some former members are participating as regular guests to our group activities:
 - Vojtěch Mlýnský, post doc, SISSA (2015--2017)
 - Simón Poblete, post doc, SISSA (2014--2018)
 - Andrea Cesari, undergraduate student, Master in Physics of Complex Systems then PhD student, SISSA (2014--2018)
-- Richard Andr\'e{} Cunha, postgraduate student then PhD student, SISSA (2013--2017)
+- Richard André Cunha, postgraduate student then PhD student, SISSA (2013--2017)
 - Alejandro Gil-Ley, PhD student, SISSA (2013--2016)
 - Giovanni Pinamonti, PhD student, SISSA (2013--2016)
 - Marco Jacopo Ferrarotti, undergraduate student, Master in Physics of Complex Systems (2013)

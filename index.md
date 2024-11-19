@@ -2,6 +2,7 @@
 This is the website for the group lead by Giovanni Bussi at SISSA.
 
 Look for us on:
+
 - Twitter/X [@bussilab](https://x.com/bussilab)
 - Bluesky [@bussilab.bsky.social](https://bsky.app/profile/bussilab.bsky.social)
 - GitHub: [@bussilab](https://github.com/bussilab)
@@ -12,4 +13,15 @@ Our group aim is to develop and apply methods based on molecular dynamics, enhan
 coarse-grain models, structural bioinformatics, and analysis of experimental data to study RNA, the most intriguing actor
 of molecular biology.
 
+### Contact
+
+Giovanni Bussi
+
+Email: [bussi@sissa.it](mailto:bussi@sissa.it)
+
+Phone: [+39 040 3787 407](tel:+390403787407)
+
+### Other
+
+Previous [webpage](https://sites.google.com/site/giovannibussi) (unmaintained)
 

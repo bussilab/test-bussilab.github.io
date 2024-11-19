@@ -10,11 +10,13 @@ The PhD program in [Physics and Chemistry of Biological Systems](https://www.sis
 offers regular 4-years fully funded PhD positions. Entrance exams are typically in spring and early fall, but the
 exact schedule is subject to changes. Once you are selected for this PhD program, you will have the opportunity to follow
 approximately 9 months of lectures and then join the group of one of the principal investigators, including ours.
+For openings, follow us on [X](https://x.com/bussilab) and [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
 
 ### Post-doctoral fellowship
 
-We currently have no opening, but we are happy to support you if you wish to apply for external funds.
+We are happy to support you if you wish to apply for external funds.
 So far, we managed to host two MSCA and one EMBO fellowships.
+For openings, follow us on [X](https://x.com/bussilab) and [Bluesky](https://bsky.app/profile/bussilab.bsky.social).
 
 ### Undergraduate
 
