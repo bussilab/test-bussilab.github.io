@@ -5,6 +5,8 @@ title: People
 ### Principal investigator
 
 Giovanni Bussi (Full Professor at [SISSA](https://www.sissa.it/))
+([scholar](https://scholar.google.com/citations?user=8qk_P2YAAAAJ) - [ORCID](https://orcid.org/0000-0001-9216-5782))
+
 
 ### Post-doctoral researchers
 

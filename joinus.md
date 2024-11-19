@@ -8,8 +8,8 @@ There are different ways to join our activities.
 
 The PhD program in [Physics and Chemistry of Biological Systems](https://www.sissa.it/sbp/) at [SISSA](https://www.sissa.it)
 offers regular 4-years fully funded PhD positions. Entrance exams are typically in spring and early fall, but the
-exact schedule is subject to changes. Once you are selected for this PhD, you will have the opportunity to follow
-approximately 9 months of lectures and then join one of the groups, including ours.
+exact schedule is subject to changes. Once you are selected for this PhD program, you will have the opportunity to follow
+approximately 9 months of lectures and then join the group of one of the principal investigators, including ours.
 
 ### Post-doctoral fellowship
 
