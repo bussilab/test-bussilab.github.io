@@ -1,8 +1,6 @@
 
 We develop and apply advanced computational methods to study RNA, the most intriguing actor in molecular biology.
 
-Stay updated with [our latest news on Bluesky](https://bsky.app/profile/bussilab.bsky.social).
-
 ---
 
 ## Contact
