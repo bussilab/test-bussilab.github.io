@@ -3,7 +3,7 @@ title: Research
 ---
 
 Explore our [recent publications on Google Scholar](https://scholar.google.com/citations?user=8qk_P2YAAAAJ&sortby=pubdate)
-for the latest insights, or feel free to contact us.
+for the latest insights.
 
 ## Computational approaches to RNA dynamics
 RNA molecules are highly dynamic, with functions often influenced by multiple structures.

@@ -13,7 +13,7 @@ Giovanni Bussi (Full Professor)
 
 ## Post-doctoral researchers
 
-- Tomàs F. D. Silva (EMBO) 
+- Tomás F. D. Silva (EMBO) 
   (
   [ORCID](https://orcid.org/0000-0003-4608-2673) |
   [Scholar](https://scholar.google.com/citations?user=WHFaAK8AAAAJ)
@@ -59,7 +59,7 @@ Some former members are participating as regular guests to our group activities:
 - Vittorio Del Tatto (undergraduate student, University of Trento, 2021)
 - Nicola Calonaci, PhD student, SISSA (2017--2020)
 - Francesca Cuturello, PhD student, SISSA (2016--2019)
-- Sabine Reisser, post doc, SISSA (2015--2018)
+- Sabine Reißer, post doc, SISSA (2015--2018)
 - Vojtěch Mlýnský, post doc, SISSA (2015--2017)
 - Simón Poblete, post doc, SISSA (2014--2018)
 - Andrea Cesari, undergraduate student, Master in Physics of Complex Systems then PhD student, SISSA (2014--2018)
@@ -72,5 +72,5 @@ Some former members are participating as regular guests to our group activities:
 - Andrea Pèrez Villa, PhD student, SISSA (2012--2015)
 - Francesco di Palma, PhD student, SISSA (2011--2014)
 - Francesco Colizzi, post doc, SISSA (2010--2013)
-- Trang Do Nhu, PhD student, SISSA, with Prof. Paolo Carloni (2010--2012)
+- Trang Do Nhu, PhD student, SISSA, cosupervision with Prof. Paolo Carloni (2010--2012)
 
