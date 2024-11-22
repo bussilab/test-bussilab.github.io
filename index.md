@@ -7,14 +7,31 @@ We develop and apply advanced computational methods to study RNA, the most intri
 
 Giovanni Bussi
 
-- **Email**: [bussi@sissa.it](mailto:bussi@sissa.it)
-- **Phone**: [+39 040 3787 407](tel:+390403787407)
-- **Office**: A-338, [SISSA, via Bonomea 265, 34136 Trieste, Italy](https://maps.app.goo.gl/tNTxGpG9mjJVxbsX8)
+<ul class="tight-list">
+<li><i class="fas fa-envelope"></i> Email: <a href="mailto:bussi@sissa.it">bussi@sissa.it</a></li>
+<li><i class="fas fa-phone"></i> Phone: <a href="tel:+390403787407">+39 040 3787 407</a></li>
+<li><i class="fas fa-location-dot"></i> Office: A-338, <a href="https://maps.app.goo.gl/tNTxGpG9mjJVxbsX8">SISSA, via Bonomea 265, 34136 Trieste, Italy</a></li>
+</ul>
 
 ---
 
 ## Resources
 
-- Explore our **Software** on [GitHub](https://github.com/bussilab).  
-- Our previous [webpage](https://sites.google.com/site/giovannibussi) is available as a historical archive.
+<ul class="tight-list">
+<li><i class="fab fa-github"></i> Explore our software on <a href="https://github.com/bussilab">GitHub</a></li>
+<li><i class="fas fa-box-archive"></i> Our <a href="https://sites.google.com/site/giovannibussi">previous webpage</a> is available as a historical archive</li>
+</ul>
+
+<style>
+  .tight-list {
+      list-style: none; /* Remove bullets */
+      padding: 0;
+      margin: 0;
+  }
+
+  .tight-list li {
+      margin: 5px 0; /* Reduce vertical spacing */
+      line-height: 1.4; /* Adjust for readability */
+  }
+</style>
 
