@@ -2,13 +2,11 @@
 title: Join Us
 ---
 
-For current openings, check our [News page](./news).
-
 ## PhD Fellowships
 
 Join the [Physics and Chemistry of Biological Systems PhD program](https://www.sissa.it/sbp/) at [SISSA](https://www.sissa.it), which offers 4-year fully funded positions. 
 
-- **Schedule**: Entrance exams are typically held in spring and summer (dates may vary). 
+- **Schedule**: Entrance exams are typically held in spring and summer. Dates may vary, so check [News](./news) for updates.
 - **Program Structure**: Selected candidates will attend approximately 9 months of lectures before choosing among the available research groups, including ours.
 
 ---
@@ -17,8 +15,8 @@ Join the [Physics and Chemistry of Biological Systems PhD program](https://www.s
 
 We welcome applications from post-doctoral researchers. Our group is happy to support you in applying for external funding.
 
-- **Previous Fellowships**: We have hosted two MSCA fellows and one EMBO fellow. 
-- **Internal Funding**: We routinely open positions funded by internal grants.
+- **Previous Fellowships**: We hosted MSCA and EMBO fellowships, and we are open to supporting other options. 
+- **Internal Funding**: We routinely open positions funded by internal grants. Check [News](./news) for open calls.
 
 ---
 
@@ -27,3 +25,11 @@ We welcome applications from post-doctoral researchers. Our group is happy to su
 We are involved in the Master in [Physics of Complex Systems](http://www.pcs.polito.it/educational_tracks/international_track), offering opportunities for internships to students in this program and external undergraduate students.  
 
 - **How to Apply**: Please reach out early to discuss potential projects and timelines.
+
+---
+
+## Visits
+
+We warmly welcome PhD students, post-docs, and senior researchers from other groups who are interested in visiting us for collaborations. Our weekly group meetings are fully hybrid, enabling continued collaboration even beyond the duration of the visit. If you’re interested in arranging a visit or discussing potential collaboration topics, feel free to [get in touch](mailto:bussi@sissa.it).
+
+
