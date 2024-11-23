@@ -11,16 +11,45 @@ Recent news:
       {% if post.date %}
       <p class="post-date">{{ post.date }}</p>
       {% endif %}
-      <p class="post-text">{{ post.text | newline_to_br }}</p>
+      <p class="post-text">{{ post.text | newline_to_br }}
       {% if post.url %}
-      <a class="post-link" href="{{ post.url }}" target="_blank">View on Bluesky</a>
-      {% endif %}
+      (<a class="post-link" href="{{ post.url }}" target="_blank">view post</a>)
+      {% endif %}</p>
     </div>
     {% endif %}
   {% endfor %}
 </div>
 
-More on [our Bluesky timeline](https://bsky.app/profile/bussilab.bsky.social).
+For more news, check [our Bluesky timeline](https://bsky.app/profile/bussilab.bsky.social).
+Older posts are [on X](https://x.com/bussilab).
+
+<script>
+  const allowedDomains = ['disq.us', 'bit.ly', 't.co']; // Whitelisted domains for partial URLs
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const posts = document.querySelectorAll(".post-text");
+    posts.forEach(post => {
+      post.innerHTML = post.innerHTML.replace(
+        /(?<!href="|">)((https?:\/\/[\w.-]+\.[a-z]{2,}(\/\S*)?)|([\w.-]+\.[a-z]{2,}\/\S*))/g,
+        (match, fullUrl, protocolUrl, path, partialUrl) => {
+          if (protocolUrl) {
+            // Generic HTTP/HTTPS URL
+            return `<a href="${protocolUrl}" target="_blank">${protocolUrl}</a>`;
+          } else if (partialUrl) {
+            // Partial URL, check whitelist
+            const domain = partialUrl.split('/')[0]; // Extract domain from partial URL
+            if (allowedDomains.includes(domain)) {
+              return `<a href="https://${partialUrl}" target="_blank">${partialUrl}</a>`;
+            }
+          }
+          // Leave unmatched URLs as is
+          return match;
+        }
+      );
+    });
+  });
+</script>
+
 
 <style>
   .timeline {

@@ -4,3 +4,18 @@
     \ Glen Hocky on catch bonding behavior in vinculin-actin unbinding kinetics"
   uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3lbei2pbnok2y
   url: https://bsky.app/profile/bussilab.bsky.social/post/3lbei2pbnok2y
+- date: '2024-11-16'
+  text: "This summer we used #moleculardynamics simulations and #enhancedsampling to predict the solvation shell of a ribozyme! Results will be announced at the coming #CASP16 conference, to which we will attend to present our approach. Finger crossed 🤞 https://x.com/BiologyAIDaily/status/1856691822606836017"
+  url: https://x.com/bussilab/status/1857847989122785411
+- date: '2024-11-14'
+  text: "🚀Introducing MDRefine: our new #python package for integrating experimental data with #moleculardynamics trajectories through diverse reweighting methods! Check out the #preprint: https://arxiv.org/abs/2411.07798. Summary in thread 🧵:"
+  url: https://x.com/bussilab/status/1857098916484837559
+- date: '2024-11-12'
+  text: "🚀Excited to share our #preprint on implementing constant pH metadynamics for #RNA oligomers! Check it out here: https://arxiv.org/abs/2410.16064. Thread 🧵:"
+  url: https://x.com/bussilab/status/1856271859165049203
+- date: '2024-11-09'
+  text: "📢 Our work on #m6A role in #RNA recognition has been published on @JPhysChem B! https://doi.org/10.1021/acs.jpcb.4c03397 An effort led by @Piompons with help from Miroslav Krepl, @sponer_lab , and @BussiGio Summary at https://x.com/bussilab/status/1783063447862718569"
+  url: https://x.com/bussilab/status/1833042944086937659
+- date: '2024-08-12'
+  text: "Come join us! Deadline in two weeks! https://x.com/BussiGio/status/1823007196159905971"
+  url: https://x.com/bussilab/status/1823007472451244204
