@@ -20,11 +20,12 @@ Recent news:
   {% endfor %}
 </div>
 
-For more news, check [our Bluesky timeline](https://bsky.app/profile/bussilab.bsky.social).
-Older posts are [on X](https://x.com/bussilab).
+See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.social) (new)
+and [Twitter/X](https://x.com/bussilab) (old).
 
 <script>
   const allowedDomains = ['disq.us', 'bit.ly', 't.co']; // Whitelisted domains for partial URLs
+  const maxDisplayLength = 25; // Maximum characters to display for long links
 
   document.addEventListener("DOMContentLoaded", function () {
     const posts = document.querySelectorAll(".post-text");
@@ -33,13 +34,21 @@ Older posts are [on X](https://x.com/bussilab).
         /(?<!href="|">)((https?:\/\/[\w.-]+\.[a-z]{2,}(\/\S*)?)|([\w.-]+\.[a-z]{2,}\/\S*))/g,
         (match, fullUrl, protocolUrl, path, partialUrl) => {
           if (protocolUrl) {
-            // Generic HTTP/HTTPS URL
-            return `<a href="${protocolUrl}" target="_blank">${protocolUrl}</a>`;
+            // Remove https:// or http:// for display text
+            const displayUrl = protocolUrl.replace(/https?:\/\//, "");
+            const shortenedDisplay = displayUrl.length > maxDisplayLength
+              ? displayUrl.slice(0, maxDisplayLength) + "..."
+              : displayUrl;
+            return `<a href="${protocolUrl}" target="_blank">${shortenedDisplay}</a>`;
           } else if (partialUrl) {
             // Partial URL, check whitelist
             const domain = partialUrl.split('/')[0]; // Extract domain from partial URL
             if (allowedDomains.includes(domain)) {
-              return `<a href="https://${partialUrl}" target="_blank">${partialUrl}</a>`;
+              const fullLink = `https://${partialUrl}`;
+              const shortenedDisplay = partialUrl.length > maxDisplayLength
+                ? partialUrl.slice(0, maxDisplayLength) + "..."
+                : partialUrl;
+              return `<a href="${fullLink}" target="_blank">${shortenedDisplay}</a>`;
             }
           }
           // Leave unmatched URLs as is
