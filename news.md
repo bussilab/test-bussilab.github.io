@@ -5,7 +5,8 @@ title: News
 Recent news:
 
 <div class="timeline">
-  {% for post in site.data.posts | slice: 0, 10%}
+  {% assign recent_posts = site.data.posts | slice: 0, 10 %}
+  {% for post in recent_posts %}
     {% if post.text %}
     <div class="post">
       {% if post.date %}
