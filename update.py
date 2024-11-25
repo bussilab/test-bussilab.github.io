@@ -63,13 +63,18 @@ def processfeed(profile_handle,feed):
     return posts
 
 def get_current_urls(path):
-    with open(path) as f:
-        urls=[]
-        for post in yaml.safe_load(f):
-            if "url" in post:
-                urls.append(post["url"])
-        return urls
-
+    urls = []
+    try:
+        with open(path, 'r') as file:
+            for line in file:
+                line = line.strip()  # Remove leading/trailing whitespace
+                if line.startswith("url:"):
+                    # Extract the URL, removing the `url:` prefix and extra spaces
+                    url = line.split("url:", 1)[1].strip()
+                    urls.append(url)
+    except Exception as e:
+        print(f"An error occurred while reading the file: {e}")
+    return urls
 
 if __name__ == "__main__":
 
@@ -78,6 +83,7 @@ if __name__ == "__main__":
 
     current_urls=get_current_urls(posts_file)
     posts=[item for item in processfeed(profile_handle,labfeed) if not item["url"] in current_urls]
+
     add_posts=convert_to_yaml(posts)
 
     with open(posts_file) as f:
