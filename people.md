@@ -2,50 +2,131 @@
 title: People
 ---
 
-## Principal investigator
+<style>
+.people-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
 
-Giovanni Bussi (Full Professor)
-(
-[ORCID](https://orcid.org/0000-0001-9216-5782) |
-[Scholar](https://scholar.google.com/citations?user=8qk_P2YAAAAJ)
-)
+.person-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.person-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.person-info h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.person-role {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.person-research {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.person-funds {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.person-links a {
+  color: #007acc;
+  margin: 0 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.person-links a:hover {
+  color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .people-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person-card {
+    width: 90%;
+  }
+}
+</style>
 
 
-## Post-doctoral researchers
+## Our group
 
-- Tomás F. D. Silva (EMBO) 
-  (
-  [ORCID](https://orcid.org/0000-0003-4608-2673) |
-  [Scholar](https://scholar.google.com/citations?user=WHFaAK8AAAAJ)
-  )
-- Olivier Languin-Cattoën (PRIN, MSCA)
-  (
-  [ORCID](https://orcid.org/0000-0002-0486-9841) |
-  [Scholar](https://scholar.google.com/citations?user=ovntaA8AAAAJ)
-  )
+<div class="people-container">
+  {% for person in site.data.people %}
+  <div class="person-card" id="{{ person.name | slugify }}">
+    <div class="person-pic">
+      {% if person.pic %}
+      <img src="{{ person.pic }}" alt="Picture of {{ person.name }}">
+      {% endif %}
+    </div>
+    <div class="person-info">
+      <h3>{{ person.name }}</h3>
+      <p class="person-role">{{ person.role }}</p>
+      {% if person.funds %}
+      <p class="person-funds">Funded by: {{ person.funds }}</p>
+      {% else %}
+      <p class="person-funds">Funded by: SISSA</p>
+      {% endif %}
+      <p class="person-research">{{ person.research | markdownify }}</p>
+      <div class="person-links">
+        {% if person.email %}
+        <a href="mailto:{{ person.email }}" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        {% endif %}
+        {% if person.phone %}
+        <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        {% endif %}
+        {% if person.orcid %}
+        <a href="{{ person.orcid }}" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        {% endif %}
+        {% if person.scholar %}
+        <a href="{{ person.scholar }}" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        {% endif %}
+        {% if person.bluesky %}
+        <a href="{{ person.bluesky }}" target="_blank" aria-label="Bluesky"><i class="fab fa-bluesky"></i></a>
+        {% endif %}
+        {% if person.twitter %}
+        <a href="{{ person.twitter }}" target="_blank" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        {% endif %}
+        {% if person.linkedin %}
+        <a href="{{ person.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-## PhD students
-
-All PhD positions are funded by SISSA
-
-- Ivan Gilardoni
-  (
-  [ORCID](https://orcid.org/0000-0002-7504-9840)
-  )
-- Elisa Posani (co-supervision with Alessandra Magistrato)
-- Salvatore Di Marco
-  (
-  [ORCID](https://orcid.org/0009-0008-5365-9446) |
-  [Scholar](https://scholar.google.com/citations?hl=en&user=5twQfMUAAAAJ)
-  ) (co-supervision with Alessandra Magistrato)
-- Giuseppe Sacco
-  (
-  [ORCID](https://orcid.org/0009-0001-0594-8349)
-  ) (co-supervision with Guido Sanguinetti)
 
 ## Guests
 
-Some former members are participating as regular guests to our group activities:
+Some former members are participating as regular guests to our group activities. Currently:
 
 - Mattia Bernetti (Università degli Studi di Urbino Carlo Bo, Italy)
 - Thorben Fröhlking (Université de Genève, Switzerland)
@@ -53,24 +134,5 @@ Some former members are participating as regular guests to our group activities:
 
 ## Previous members
 
-- Valerio Piomponi, PhD student, SISSA (2020--2023)
-- Thorben Fröhlking, PhD student, SISSA (2019--2022)
-- Mattia Bernetti, post doc, SISSA (2018--2021)
-- Vittorio Del Tatto (undergraduate student, University of Trento, 2021)
-- Nicola Calonaci, PhD student, SISSA (2017--2020)
-- Francesca Cuturello, PhD student, SISSA (2016--2019)
-- Sabine Reißer, post doc, SISSA (2015--2018)
-- Vojtěch Mlýnský, post doc, SISSA (2015--2017)
-- Simón Poblete, post doc, SISSA (2014--2018)
-- Andrea Cesari, undergraduate student, Master in Physics of Complex Systems then PhD student, SISSA (2014--2018)
-- Richard André Cunha, postgraduate student then PhD student, SISSA (2013--2017)
-- Alejandro Gil-Ley, PhD student, SISSA (2013--2016)
-- Giovanni Pinamonti, PhD student, SISSA (2013--2016)
-- Marco Jacopo Ferrarotti, undergraduate student, Master in Physics of Complex Systems (2013)
-- Sandro Bottaro, post doc, SISSA (2012--2016)
-- Maria Darvas, post doc, SISSA (2012--2015)
-- Andrea Pèrez Villa, PhD student, SISSA (2012--2015)
-- Francesco di Palma, PhD student, SISSA (2011--2014)
-- Francesco Colizzi, post doc, SISSA (2010--2013)
-- Trang Do Nhu, PhD student, SISSA, cosupervision with Prof. Paolo Carloni (2010--2012)
+Previous members of the group at listed in [this page](people-previous.md).
 

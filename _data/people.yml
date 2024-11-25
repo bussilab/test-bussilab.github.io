@@ -1,0 +1,56 @@
+- name: Giovanni Bussi
+  pic: images/giovanni.jpeg
+  role: Principal Investigator
+  email: bussi@sissa.it
+  phone: "+390403787407"
+  orcid: https://orcid.org/0000-0001-9216-5782
+  scholar: https://scholar.google.com/citations?user=8qk_P2YAAAAJ
+  bluesky: https://bsky.app/profile/bussigio.bsky.social
+  twitter: https://x.com/BussiGio
+  linkedin: https://www.linkedin.com/in/giovannibussi
+  research: >
+    Computational methods to study RNA dynamics.
+
+- name: Tomás F. D. Silva
+  role: Post-Doctoral Researcher
+  funds: EMBO, PRIN
+  scholar: https://scholar.google.com/citations?user=WHFaAK8AAAAJ
+  orcid: https://orcid.org/0000-0003-4608-2673
+  research: >
+    Constant pH methods for RNA systems.
+
+- name: Olivier Languin-Cattoën
+  role: Post-Doctoral Researcher
+  funds: SISSA, PRIN, MSCA
+  scholar: https://scholar.google.com/citations?user=ovntaA8AAAAJ
+  orcid: https://orcid.org/0000-0002-0486-9841
+  research: >
+    Enhanced sampling methods for interaction of RNA with divalent cations. Diffusion models for RNA dynamics.
+
+- name: Ivan Gilardoni
+  role: PhD Student
+  orcid: https://orcid.org/0000-0002-7504-9840
+  research: >
+    Methods to integrate experiment and simulation data.
+  
+- name: Elisa Posani
+  role: PhD Student
+  research: >
+    Integration of cryo-EM data and MD simulations to study RNA dynamics and interaction with divalent cations.
+    Co-supervision with [Alessandra Magistrato (CNR)](https://www.iom.cnr.it/phonebook/alessandra-magistrato/).
+
+- name: Salvatore Di Marco
+  role: PhD Student
+  funds: SISSA, PNRR
+  orcid: https://orcid.org/0009-0008-5365-9446
+  scholar: https://scholar.google.com/citations?hl=en&user=5twQfMUAAAAJ
+  research: >
+    Simulation of RNA-membrane interactions.
+    Co-supervision with [Alessandra Magistrato (CNR)](https://www.iom.cnr.it/phonebook/alessandra-magistrato/).
+
+- name: Giuseppe Sacco
+  role: PhD Student
+  orcid: https://orcid.org/0009-0001-0594-8349
+  research: >
+    Combination of chemical probing data and secondary structure prediction.
+    Co-supervision with [Guido Sanguinetti (SISSA)](https://orcid.org/0000-0002-6663-8336).

@@ -7,6 +7,8 @@ We develop and apply advanced computational methods to study RNA, the most intri
 
 Giovanni Bussi
 
+Principal Investigator, Full Professor  
+
 <ul class="tight-list">
 <li><i class="fas fa-envelope"></i> Email: <a href="mailto:bussi@sissa.it">bussi@sissa.it</a></li>
 <li><i class="fas fa-phone"></i> Phone: <a href="tel:+390403787407">+39 040 3787 407</a></li>
