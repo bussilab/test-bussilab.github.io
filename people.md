@@ -117,6 +117,9 @@ title: People
         {% if person.linkedin %}
         <a href="{{ person.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         {% endif %}
+        {% if person.github %}
+        <a href="{{ person.github }}" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        {% endif %}
       </div>
     </div>
   </div>
