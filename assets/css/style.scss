@@ -6,23 +6,23 @@ $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
 // Headers
-$header-heading-color: #fff;
-$header-bg-color: #000;
-$header-bg-color-secondary: #555;
+$header-heading-color: #fff !default;
+$header-bg-color: #003366 !default; // Deep navy blue
+$header-bg-color-secondary: #006699 !default; // Teal blue
 
 // Text
-$section-headings-color: #555;
-$body-text-color: #606c71;
-$body-link-color: #1e6bb8;
-$blockquote-text-color: #819198;
+$section-headings-color: #008060 !default; // Deep green
+$body-text-color: #4a4a4a !default; // Dark gray
+$body-link-color: #0056b3 !default; // Medium blue
+$blockquote-text-color: #557a95 !default; // Muted steel blue
 
 // Code
-$code-bg-color: #f3f6fa;
-$code-text-color: #567482;
+$code-bg-color: #f4f7f8 !default; // Light cool gray
+$code-text-color: #333333 !default; // Black for code
 
 // Borders
-$border-color: #dce6f0;
-$table-border-color: #e9ebec;
-$hr-border-color: #eff0f1;
+$border-color: #c4c4c4 !default; // Soft gray
+$table-border-color: #e9ebec !default; // Light gray for tables
+$hr-border-color: #e0e0e0 !default; // Very light gray
 
 @import "{{ site.theme }}";
