@@ -6,23 +6,23 @@ $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
 // Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #003366 !default; // Deep navy blue
-$header-bg-color-secondary: #006699 !default; // Teal blue
+$header-heading-color: #fff !default; // White for contrast
+$header-bg-color: #f57c00 !default; // Bright orange
+$header-bg-color-secondary: #e65100 !default; // Burnt orange gradient
 
 // Text
-$section-headings-color: #008060 !default; // Deep green
-$body-text-color: #4a4a4a !default; // Dark gray
-$body-link-color: #0056b3 !default; // Medium blue
-$blockquote-text-color: #557a95 !default; // Muted steel blue
+$section-headings-color: #f57c00 !default; // Orange for headings
+$body-text-color: #4a4a4a !default; // Neutral dark gray for text
+$body-link-color: #0056b3 !default; // Blue for contrast and visibility
+$blockquote-text-color: #6d4c41 !default; // Warm brown
 
 // Code
-$code-bg-color: #f4f7f8 !default; // Light cool gray
-$code-text-color: #333333 !default; // Black for code
+$code-bg-color: #f4f7f8 !default; // Light neutral gray
+$code-text-color: #333333 !default; // Dark gray
 
 // Borders
-$border-color: #c4c4c4 !default; // Soft gray
-$table-border-color: #e9ebec !default; // Light gray for tables
-$hr-border-color: #e0e0e0 !default; // Very light gray
+$border-color: #e0e0e0 !default; // Light gray
+$table-border-color: #e9ebec !default; // Subtle gray for tables
+$hr-border-color: #c8c8c8 !default; // Softer gray for horizontal rules
 
 @import "{{ site.theme }}";
