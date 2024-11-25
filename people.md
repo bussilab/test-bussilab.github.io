@@ -97,13 +97,13 @@ title: People
       <p class="person-research">{{ person.research | markdownify }}</p>
       <div class="person-links">
         {% if person.email %}
-        <a href="mailto:{{ person.email }}" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:{{ person.email }}" target="_blank" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
         {% endif %}
         {% if person.phone %}
-        <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        <a href="tel:{{ person.phone }}" target="_blank" title="Phone" aria-label="Phone"><i class="fas fa-phone"></i></a>
         {% endif %}
         {% if person.orcid %}
-        <a href="{{ person.orcid }}" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        <a href="{{ person.orcid }}" target="_blank" title="ORCID" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
         {% endif %}
         {% if person.scholar %}
         <a href="{{ person.scholar }}" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
