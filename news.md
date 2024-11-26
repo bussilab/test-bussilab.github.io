@@ -25,40 +25,54 @@ See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.socia
 and [Twitter/X](https://x.com/bussilab) (old).
 
 <script>
-  const allowedDomains = ['disq.us', 'bit.ly', 't.co']; // Whitelisted domains for partial URLs
+  const allowedDomains = ['disq.us', 'bit.ly', 't.co', 'doi.org']; // Whitelisted domains for partial URLs
   const maxDisplayLength = 25; // Maximum characters to display for long links
 
   document.addEventListener("DOMContentLoaded", function () {
     const posts = document.querySelectorAll(".post-text");
     posts.forEach(post => {
-      post.innerHTML = post.innerHTML.replace(
+      let originalContent = post.innerHTML;
+
+      // Temporarily remove <a> tags and their content
+      const anchorPlaceholders = [];
+      originalContent = originalContent.replace(/<a [^>]+>.*?<\/a>/gi, (match) => {
+        anchorPlaceholders.push(match);
+        return `ANCHOR_PLACEHOLDER_${anchorPlaceholders.length - 1}`;
+      });
+
+      // Process remaining text for URLs
+      originalContent = originalContent.replace(
         /(?<!href="|">)((https?:\/\/[\w.-]+\.[a-z]{2,}(\/\S*)?)|([\w.-]+\.[a-z]{2,}\/\S*))/g,
-        (match, fullUrl, protocolUrl, path, partialUrl) => {
-          if (protocolUrl) {
-            // Remove https:// or http:// for display text
-            const displayUrl = protocolUrl.replace(/https?:\/\//, "");
-            const shortenedDisplay = displayUrl.length > maxDisplayLength
-              ? displayUrl.slice(0, maxDisplayLength) + "..."
-              : displayUrl;
-            return `<a href="${protocolUrl}" target="_blank">${shortenedDisplay}</a>`;
-          } else if (partialUrl) {
-            // Partial URL, check whitelist
-            const domain = partialUrl.split('/')[0]; // Extract domain from partial URL
-            if (allowedDomains.includes(domain)) {
-              const fullLink = `https://${partialUrl}`;
-              const shortenedDisplay = partialUrl.length > maxDisplayLength
-                ? partialUrl.slice(0, maxDisplayLength) + "..."
-                : partialUrl;
-              return `<a href="${fullLink}" target="_blank">${shortenedDisplay}</a>`;
-            }
-          }
-          // Leave unmatched URLs as is
-          return match;
+        (match, fullUrl) => {
+          // Extract and preserve trailing punctuation
+          const trailingPunctuationMatch = fullUrl.match(/[.,:!]+$/);
+          const trailingPunctuation = trailingPunctuationMatch ? trailingPunctuationMatch[0] : "";
+          const urlWithoutTrailingPunctuation = fullUrl.replace(/[.,:!]+$/, ""); // Remove trailing punctuation
+
+          // Format display URL
+          const displayUrl = urlWithoutTrailingPunctuation.replace(/https?:\/\//, ""); // Remove protocol for display
+          const shortenedDisplay = displayUrl.length > maxDisplayLength
+            ? displayUrl.slice(0, maxDisplayLength) + "..."
+            : displayUrl;
+
+          // Determine if the URL needs "https://" prepended
+          const isFullUrl = fullUrl.startsWith("http://") || fullUrl.startsWith("https://");
+          const finalUrl = isFullUrl ? urlWithoutTrailingPunctuation : `https://${urlWithoutTrailingPunctuation}`;
+
+          // Return the clickable link with preserved punctuation
+          return `<a href="${finalUrl}" target="_blank">${shortenedDisplay}</a>${trailingPunctuation}`;
         }
       );
+
+      // Restore original <a> tags
+      originalContent = originalContent.replace(/ANCHOR_PLACEHOLDER_(\d+)/g, (_, index) => anchorPlaceholders[index]);
+
+      // Update post content
+      post.innerHTML = originalContent;
     });
   });
 </script>
+
 
 
 <style>
