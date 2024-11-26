@@ -4,27 +4,15 @@ from datetime import datetime
 import yaml
 import os
 
-LOGIN_URL = "https://bsky.social/xrpc/com.atproto.server.createSession"
-FEED_URL = "https://bsky.social/xrpc/app.bsky.feed.getAuthorFeed"
+FEED_URL = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
 
 user_handle="bussilab.bsky.social"
 profile_handle="bussilab.bsky.social"
 posts_file="_data/posts.yml"
-bsky_token=os.environ["BSKY_TOKEN"]
 
-def get_access_token(username, password):
-    data = {"identifier": username, "password": password}
-    response = requests.post(LOGIN_URL, json=data)
-    if response.status_code == 200:
-        return response.json().get("accessJwt")
-    else:
-        print(f"Error: {response.status_code}, {response.text}")
-        return None
-
-def fetch_authorfeed(access_token, actor):
-    headers = {"Authorization": f"Bearer {access_token}"}
+def fetch_authorfeed(actor):
     params = {"actor": actor}
-    response = requests.get(FEED_URL, headers=headers, params=params)
+    response = requests.get(FEED_URL, params=params)
     if response.status_code == 200:
         return response.json()
     else:
@@ -73,8 +61,7 @@ def get_current_urls(path):
 
 if __name__ == "__main__":
 
-    token=get_access_token(user_handle,"dzmt-mf66-cthq-rfvg")
-    labfeed=fetch_authorfeed(token,profile_handle)
+    labfeed=fetch_authorfeed(profile_handle)
 
     current_urls=get_current_urls(posts_file)
     posts=[item for item in processfeed(profile_handle,labfeed) if not item["url"] in current_urls]
