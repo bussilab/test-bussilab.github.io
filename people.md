@@ -97,28 +97,28 @@ title: People
       <p class="person-research">{{ person.research | markdownify }}</p>
       <div class="person-links">
         {% if person.email %}
-        <a href="mailto:{{ person.email }}" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:{{ person.email }}" target="_blank" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
         {% endif %}
         {% if person.phone %}
-        <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone" title="Phone"><i class="fas fa-phone"></i></a>
         {% endif %}
         {% if person.orcid %}
-        <a href="{{ person.orcid }}" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        <a href="{{ person.orcid }}" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
         {% endif %}
         {% if person.scholar %}
-        <a href="{{ person.scholar }}" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="{{ person.scholar }}" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         {% endif %}
         {% if person.bluesky %}
-        <a href="{{ person.bluesky }}" target="_blank" aria-label="Bluesky"><i class="fab fa-bluesky"></i></a>
+        <a href="{{ person.bluesky }}" target="_blank" aria-label="Bluesky" title="Bluesky"><i class="fab fa-bluesky"></i></a>
         {% endif %}
         {% if person.twitter %}
-        <a href="{{ person.twitter }}" target="_blank" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="{{ person.twitter }}" target="_blank" aria-label="Twitter/X" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
         {% endif %}
         {% if person.linkedin %}
-        <a href="{{ person.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="{{ person.linkedin }}" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         {% endif %}
         {% if person.github %}
-        <a href="{{ person.github }}" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="{{ person.github }}" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
         {% endif %}
       </div>
     </div>
