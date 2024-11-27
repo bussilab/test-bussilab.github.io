@@ -53,7 +53,7 @@ and [Twitter/X](https://x.com/bussilab) (old).
   // JavaScript for search and filtering functionality
   function filterPosts() {
     const query = document.getElementById('search-box').value.toLowerCase();
-    const maxPosts = parseInt(document.getElementById('max-posts').value, 5);
+    const maxPosts = parseInt(document.getElementById('max-posts').value, 10);
     const posts = document.querySelectorAll('.post');
 
     let visibleCount = 0;
