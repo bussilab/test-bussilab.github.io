@@ -27,6 +27,7 @@ Recent news:
   {% endfor %}
 </div>
 
+To visualize and search previous news, go to the [News archive](./new-archive.md).
 See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.social) (new)
 and [Twitter/X](https://x.com/bussilab) (old).
 
