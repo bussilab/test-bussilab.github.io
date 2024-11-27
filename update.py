@@ -3,12 +3,12 @@ import requests
 from datetime import datetime
 import yaml
 import os
+import sys
 
 FEED_URL = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
 
 user_handle="bussilab.bsky.social"
 profile_handle="bussilab.bsky.social"
-posts_file="_data/posts.yml"
 
 def fetch_authorfeed(actor):
     params = {"actor": actor}
@@ -60,6 +60,7 @@ def get_current_urls(path):
 
 
 if __name__ == "__main__":
+    posts_file=sys.argv[1]
 
     labfeed=fetch_authorfeed(profile_handle)
 
