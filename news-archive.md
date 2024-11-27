@@ -1,7 +1,6 @@
 ---
 title: News Archive
 layout: default
-permalink: /news-archive/
 ---
 
 <h1>News Archive</h1>
