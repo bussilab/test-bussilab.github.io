@@ -5,11 +5,17 @@ layout: default
 
 <h1>News Archive</h1>
 
-<!-- Search Box -->
-<input type="text" id="search-box" placeholder="Search news..." oninput="filterPosts()">
+<!-- Search and Filter Controls -->
+<div>
+  <input type="text" id="search-box" placeholder="Search news..." oninput="filterPosts()">
+  <label for="max-posts">Show:</label>
+  <input type="number" id="max-posts" value="10" min="1" oninput="filterPosts()" style="width: 60px;">
+</div>
 
 Search arbitrary text or use common hashtags, such as ([#openreview](./news-archive?query=%23openreview) or [#preprint](./news-archive?query=%23preprint)).
-Search arbitrary text or use common hashtags, such as ([#openreview](./news-archive) or [#preprint](./news-archive)).
+
+<!-- No Results Message -->
+<p id="no-results" style="display: none; color: red;">No posts found.</p>
 
 <!-- Posts List -->
 <div id="posts">
@@ -27,52 +33,67 @@ Search arbitrary text or use common hashtags, such as ([#openreview](./news-arch
 </div>
 
 <script>
-  // Populate the search box with query parameter value on load
+  // Populate the search box and max-posts field with query parameters on load
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get("query");
+    const maxPosts = urlParams.get("maxPosts") || 10; // Default to 10 posts
+
+    document.getElementById('max-posts').value = maxPosts;
+
     if (query) {
       const searchBox = document.getElementById('search-box');
       searchBox.value = query;
-      filterPosts(); // Perform search with pre-filled value
     }
+
+    filterPosts(); // Perform search and apply max posts filter
   });
 
-  // JavaScript for search functionality
+  // JavaScript for search and filtering functionality
   function filterPosts() {
-    const searchBox = document.getElementById('search-box');
-    const query = searchBox.value.toLowerCase();
+    const query = document.getElementById('search-box').value.toLowerCase();
+    const maxPosts = parseInt(document.getElementById('max-posts').value, 10);
     const posts = document.querySelectorAll('.post');
-    let anyVisible = false;
+
+    let visibleCount = 0;
 
     posts.forEach(post => {
       const text = post.getAttribute('data-text').toLowerCase();
-      if (text.includes(query)) {
+      const matchesQuery = text.includes(query);
+
+      if (matchesQuery && visibleCount < maxPosts) {
         post.style.display = 'block';
-        anyVisible = true;
+        visibleCount++;
       } else {
         post.style.display = 'none';
       }
     });
 
-    // Update URL query parameter
+    // Show/hide "No Results" message
+    document.getElementById('no-results').style.display = visibleCount > 0 ? 'none' : 'block';
+
+    // Update query parameters
     const url = new URL(window.location);
     if (query) {
       url.searchParams.set('query', query);
     } else {
       url.searchParams.delete('query');
     }
+    url.searchParams.set('maxPosts', maxPosts);
     window.history.replaceState({}, '', url);
   }
 </script>
 
 <style>
-  #search-box {
+  #search-box, #max-posts {
     margin-bottom: 20px;
     padding: 10px;
-    width: 100%;
-    max-width: 400px;
     font-size: 16px;
+  }
+
+  #max-posts {
+    margin-left: 10px;
+    width: 70px;
   }
 
   .post {
@@ -81,6 +102,10 @@ Search arbitrary text or use common hashtags, such as ([#openreview](./news-arch
 
   .post-date {
     font-weight: bold;
+  }
+
+  #no-results {
+    font-size: 18px;
   }
 </style>
 
