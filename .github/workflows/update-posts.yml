@@ -37,16 +37,33 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          # Stash local changes
-          git stash --include-untracked
+          # Check if there are changes to stash
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Stashing local changes..."
+            git stash --include-untracked
+            stash_created=true
+          else
+            echo "No local changes to stash."
+            stash_created=false
+          fi
+          
           # Pull latest changes and rebase
           git pull --rebase origin master || git rebase --abort
-          # Reapply stashed changes
-          git stash pop
+          
+          # Reapply stashed changes if any
+          if [ "$stash_created" = true ]; then
+            echo "Applying stashed changes..."
+            git stash pop || echo "No stash entries to apply."
+          fi
+          
           # Stage, commit, and push changes
           git add _data/posts.yml
-          git diff --cached --quiet || git commit -m "[skip update] Automated update: $(date)"
-          git push origin master
+          if ! git diff --cached --quiet; then
+            git commit -m "[skip update] Automated update: $(date)"
+            git push origin master
+          else
+            echo "No changes to commit."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
