@@ -7,12 +7,11 @@ layout: default
 
 <!-- Search and Filter Controls -->
 <div>
-  <input type="text" id="search-box" placeholder="Search news or hashtags (e.g., #openreview, #preprint)" oninput="filterPosts()">
+  <input type="text" id="search-box" placeholder="Search news..." oninput="filterPosts()">
   <label for="max-posts">Show:</label>
   <input type="number" id="max-posts" value="5" min="1" oninput="filterPosts()" style="width: 60px;">
 </div>
 
-More posts can be visualized and searched in the [News archive](news-archive).
 See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.social) (new)
 and [Twitter/X](https://x.com/bussilab) (old).
 
@@ -91,6 +90,16 @@ and [Twitter/X](https://x.com/bussilab) (old).
     margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
+    width: 100%; /* Ensure consistent size */
+    max-width: 400px; /* Limit to prevent overflow */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+
+  @media (max-width: 768px) { /* Adjust for smaller screens */
+    #search-box, #max-posts {
+      max-width: calc(100% - 20px); /* Prevent overflow */
+    }
   }
 
   #search-box::placeholder {
