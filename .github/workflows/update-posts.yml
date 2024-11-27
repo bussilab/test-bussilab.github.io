@@ -58,6 +58,7 @@ jobs:
           
           # Stage, commit, and push changes
           git add _data/posts.yml
+          git add _data/posts_preformatted_text.yml
           if ! git diff --cached --quiet; then
             git commit -m "[skip update] Automated update: $(date)"
             git push origin master
