@@ -38,7 +38,7 @@ and [Twitter/X](https://x.com/bussilab) (old).
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get("query");
-    const maxPosts = urlParams.get("maxPosts") || 10; // Default to 10 posts
+    const maxPosts = urlParams.get("maxPosts") || 5; // Default to 5 posts
 
     document.getElementById('max-posts').value = maxPosts;
 
@@ -53,7 +53,7 @@ and [Twitter/X](https://x.com/bussilab) (old).
   // JavaScript for search and filtering functionality
   function filterPosts() {
     const query = document.getElementById('search-box').value.toLowerCase();
-    const maxPosts = parseInt(document.getElementById('max-posts').value, 10);
+    const maxPosts = parseInt(document.getElementById('max-posts').value, 5);
     const posts = document.querySelectorAll('.post');
 
     let visibleCount = 0;
