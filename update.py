@@ -64,6 +64,8 @@ if __name__ == "__main__":
 
     labfeed=fetch_authorfeed(profile_handle)
 
+    print(labfeed)
+
     current_urls=get_current_urls(posts_file)
     posts=[item for item in processfeed(profile_handle,labfeed) if not item["url"] in current_urls]
 
@@ -84,4 +86,5 @@ if __name__ == "__main__":
     with open(posts_file,"w") as f:
         for line in newlines:
             print(line,end="",file=f)
+            print(line,end="")
 
