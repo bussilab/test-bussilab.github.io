@@ -7,12 +7,14 @@ layout: default
 
 <!-- Search and Filter Controls -->
 <div>
-  <input type="text" id="search-box" placeholder="Search news..." oninput="filterPosts()">
+  <input type="text" id="search-box" placeholder="Search news or hashtags (e.g., #openreview, #preprint)" oninput="filterPosts()">
   <label for="max-posts">Show:</label>
-  <input type="number" id="max-posts" value="10" min="1" oninput="filterPosts()" style="width: 60px;">
+  <input type="number" id="max-posts" value="5" min="1" oninput="filterPosts()" style="width: 60px;">
 </div>
 
-Search arbitrary text or use common hashtags, such as ([#openreview](./news-archive?query=%23openreview) or [#preprint](./news-archive?query=%23preprint)).
+More posts can be visualized and searched in the [News archive](news-archive).
+See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.social) (new)
+and [Twitter/X](https://x.com/bussilab) (old).
 
 <!-- No Results Message -->
 <p id="no-results" style="display: none; color: red;">No posts found.</p>
@@ -91,6 +93,11 @@ Search arbitrary text or use common hashtags, such as ([#openreview](./news-arch
     font-size: 16px;
   }
 
+  #search-box::placeholder {
+    color: #999; /* Light gray */
+    font-style: italic; /* Optional */
+  }
+
   #max-posts {
     margin-left: 10px;
     width: 70px;
@@ -107,5 +114,6 @@ Search arbitrary text or use common hashtags, such as ([#openreview](./news-arch
   #no-results {
     font-size: 18px;
   }
+
 </style>
 
