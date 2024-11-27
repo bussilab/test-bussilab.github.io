@@ -10,6 +10,7 @@ permalink: /news-archive/
 <input type="text" id="search-box" placeholder="Search news..." oninput="filterPosts()">
 
 Search arbitrary text or use common hashtags, such as ([#openreview](./news-archive?query=%23openreview) or [#preprint](./news-archive?query=%23preprint)).
+Search arbitrary text or use common hashtags, such as ([#openreview](./news-archive) or [#preprint](./news-archive)).
 
 <!-- Posts List -->
 <div id="posts">
