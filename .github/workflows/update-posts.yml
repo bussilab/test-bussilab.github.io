@@ -8,31 +8,37 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
+      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Ensure full history for git operations
+          fetch-depth: 0 # Fetch full history for git operations
 
+      # Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
 
-      - name: Install Dependencies
+      # Install Python dependencies if required
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Update Script
-        run: ./update.sh
+      # Run your update script
+      - name: Run update script
+        run: python3 update.py _data/posts.yml
 
+      # Configure Git for commit
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Push Changes
+      # Commit and push changes if there are any
+      - name: Commit and Push Changes
         run: |
+          git pull --rebase origin master || git rebase --abort
           git add _data/posts.yml
           git diff --quiet || git commit -m "[skip update] Automated update: $(date)"
           git push origin master
