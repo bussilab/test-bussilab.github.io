@@ -6,7 +6,7 @@ title: Join Us
 
 Join the [Physics and Chemistry of Biological Systems PhD program](https://www.sissa.it/sbp/) at [SISSA](https://www.sissa.it), which offers 4-year fully funded positions. 
 
-- **Schedule**: Entrance exams are typically held in spring and summer. Dates may vary, so check [News](./news) for updates.
+- **Schedule**: Entrance exams are typically held in spring and summer. Dates may vary, so check [news](./news?query=%23joinus%7Cjoin+us) for updates.
 - **Program Structure**: Selected candidates will attend approximately 9 months of lectures before choosing among the available research groups, including ours.
 
 ---
@@ -16,7 +16,7 @@ Join the [Physics and Chemistry of Biological Systems PhD program](https://www.s
 We welcome applications from post-doctoral researchers. Our group is happy to support you in applying for external funding.
 
 - **Previous Fellowships**: We hosted MSCA and EMBO fellowships, and we are open to supporting other options. 
-- **Internal Funding**: We routinely open positions funded by internal grants. Check [News](./news) for open calls.
+- **Internal Funding**: We routinely open positions funded by internal grants. Check [news](./news?query=%23joinus%7Cjoin+us) for open calls.
 
 ---
 

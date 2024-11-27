@@ -17,6 +17,17 @@ profile_handle="bussilab.bsky.social"
 ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org']
 MAX_DISPLAY_LENGTH = 25
 
+# Define the base URL for hashtag queries
+archive_base_url = "./news?query="
+
+def linkify_hashtags(text):
+    """
+    Replaces hashtags with clickable links to the News Archive page with a pre-filled query.
+    Handles cases where hashtags are followed by punctuation marks.
+    """
+    hashtag_pattern = re.compile(r"(?<!\w)#(\w+)(?=[\s.,!?;:]|$)")
+    return hashtag_pattern.sub(r'<a href="' + archive_base_url + r'%23\1">#\1</a>', text)
+
 
 def fetch_authorfeed(actor):
     params = {"actor": actor}
@@ -150,7 +161,9 @@ def process_posts(posts_file, formatted_file):
             original_text = post['text']
             # Step 1: Render Markdown
             rendered_text = render_markdown(original_text)
-            # Step 2: Preformat links
+            # Step 2: Format hashtags
+            rendered_text = linkify_hashtags(rendered_text)
+            # Step 3: Preformat links
             formatted_text = preformat_text(rendered_text)
             # Store the formatted text using the URL as the key
             formatted_posts[post['url']] = formatted_text
