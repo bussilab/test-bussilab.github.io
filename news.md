@@ -5,7 +5,7 @@ title: News
 Recent news:
 
 <div class="timeline">
-  {% assign recent_posts = site.data.posts | slice: 0, 10 %}
+  {% assign recent_posts = site.data.posts | slice: 0, 5 %}
   {% for post in recent_posts %}
     {% assign preformatted_text = site.data.posts_preformatted_text[post.url] %}
     {% if post.text %}
@@ -27,6 +27,7 @@ Recent news:
   {% endfor %}
 </div>
 
+More posts can be visualized and searched in the [News archive](news-archive).
 See also our timelines on [Bluesky](https://bsky.app/profile/bussilab.bsky.social) (new)
 and [Twitter/X](https://x.com/bussilab) (old).
 
