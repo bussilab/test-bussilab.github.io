@@ -25,14 +25,42 @@ permalink: /news-archive/
 </div>
 
 <script>
+  // Populate the search box with query parameter value on load
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get("query");
+    if (query) {
+      const searchBox = document.getElementById('search-box');
+      searchBox.value = query;
+      filterPosts(); // Perform search with pre-filled value
+    }
+  });
+
   // JavaScript for search functionality
   function filterPosts() {
-    const query = document.getElementById('search-box').value.toLowerCase();
+    const searchBox = document.getElementById('search-box');
+    const query = searchBox.value.toLowerCase();
     const posts = document.querySelectorAll('.post');
+    let anyVisible = false;
+
     posts.forEach(post => {
       const text = post.getAttribute('data-text').toLowerCase();
-      post.style.display = text.includes(query) ? 'block' : 'none';
+      if (text.includes(query)) {
+        post.style.display = 'block';
+        anyVisible = true;
+      } else {
+        post.style.display = 'none';
+      }
     });
+
+    // Update URL query parameter
+    const url = new URL(window.location);
+    if (query) {
+      url.searchParams.set('query', query);
+    } else {
+      url.searchParams.delete('query');
+    }
+    window.history.replaceState({}, '', url);
   }
 </script>
 
