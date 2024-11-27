@@ -35,12 +35,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Commit and push changes if there are any
       - name: Commit and Push Changes
         run: |
+          # Stash local changes
+          git stash --include-untracked
+          # Pull latest changes and rebase
           git pull --rebase origin master || git rebase --abort
+          # Reapply stashed changes
+          git stash pop
+          # Stage, commit, and push changes
           git add _data/posts.yml
-          git diff --quiet || git commit -m "[skip update] Automated update: $(date)"
+          git diff --cached --quiet || git commit -m "[skip update] Automated update: $(date)"
           git push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
