@@ -4,11 +4,38 @@ title: People
 
 <style>
 .people-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  display: grid;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center-align grid */
+  align-items: center; /* Center-align items vertically (optional) */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .people-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    justify-items: center; /* Center cards horizontally */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .people-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 1201px) {
+  .people-container {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    max-width: 1200px; /* Optional: Limit max width */
+  }
+}
+
+@media (min-width: 1600px) {
+  .people-container {
+    grid-template-columns: repeat(4, 1fr); /* Four columns on extra-large screens */
+    max-width: 1400px; /* Optional: Limit max width */
+  }
 }
 
 .person-card {
@@ -63,16 +90,6 @@ title: People
   color: #005bb5;
 }
 
-@media (max-width: 768px) {
-  .people-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .person-card {
-    width: 90%;
-  }
-}
 </style>
 
 
