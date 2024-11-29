@@ -11,6 +11,13 @@ from html import escape
 
 FEED_URL = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
 
+BLSKY_DOMAIN = "bsky.app"  # Recognized Bluesky domain
+
+PROFILE_URL = "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile"
+
+# Cache for profile names to avoid repeated API calls
+profile_cache = {}
+
 user_handle="bussilab.bsky.social"
 profile_handle="bussilab.bsky.social"
 # Configuration
@@ -37,6 +44,38 @@ def fetch_authorfeed(actor):
     else:
         print(f"Error: {response.status_code}, {response.text}")
         return None
+
+def fetch_authorprofile(actor):
+    params = {"actor": actor}
+    response = requests.get(PROFILE_URL, params=params)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f"Error: {response.status_code}, {response.text}")
+        return None
+
+def get_display_name(handle):
+    """
+    Fetches the display name for a given handle using Bluesky API.
+    Caches results to avoid redundant calls.
+    """
+    if handle in profile_cache:
+        return profile_cache[handle]  # Return cached result
+
+    profile = fetch_authorprofile(handle)
+    if profile and "displayName" in profile:
+        display_name = profile["displayName"]
+        profile_cache[handle] = display_name  # Cache the result
+        return display_name
+    else:
+        return handle  # Fallback to original handle if not found
+
+def replace_handles_with_display_names(post_text):
+    """
+    Replaces @handles in the text with their corresponding display names.
+    """
+    handle_pattern = re.compile(r"@([a-zA-Z0-9_\.]+)")  # Match handles like @xxxx
+    return handle_pattern.sub(lambda match: get_display_name(match.group(1)), post_text)
 
 # Function to format the text with the '|' style
 def convert_to_yaml(data):
@@ -165,6 +204,9 @@ def process_posts(posts_file, formatted_file):
             rendered_text = linkify_hashtags(rendered_text)
             # Step 3: Preformat links
             formatted_text = preformat_text(rendered_text)
+            # Step 4: fix bsky handles
+            if "url" in post and BLSKY_DOMAIN in post["url"]: # Only process Bluesky posts
+                formatted_text = replace_handles_with_display_names(formatted_text)
             # Store the formatted text using the URL as the key
             formatted_posts[post['url']] = formatted_text
 
