@@ -3,7 +3,8 @@
   role: Principal Investigator
   email: bussi@sissa.it
   phone: "+390403787407"
-  orcid: https://orcid.org/0000-0001-9216-5782
+  orcid: "0000-0001-9216-5782"
+  prereview: true
   scholar: https://scholar.google.com/citations?user=8qk_P2YAAAAJ
   github: https://github.com/giovannibussi
   bluesky: https://bsky.app/profile/bussigio.bsky.social
@@ -16,7 +17,7 @@
   role: Post-Doctoral Researcher
   funds: EMBO, PRIN
   scholar: https://scholar.google.com/citations?user=WHFaAK8AAAAJ
-  orcid: https://orcid.org/0000-0003-4608-2673
+  orcid: "0000-0003-4608-2673"
   research: >
     Constant pH methods for RNA systems.
 
@@ -24,13 +25,15 @@
   role: Post-Doctoral Researcher
   funds: SISSA, PRIN, MSCA
   scholar: https://scholar.google.com/citations?user=ovntaA8AAAAJ
-  orcid: https://orcid.org/0000-0002-0486-9841
+  orcid: "0000-0002-0486-9841"
+  prereview: true
   research: >
     Enhanced sampling methods for interaction of RNA with divalent cations. Diffusion models for RNA dynamics.
 
 - name: Ivan Gilardoni
   role: PhD Student
-  orcid: https://orcid.org/0000-0002-7504-9840
+  orcid: "0000-0002-7504-9840"
+  prereview: true
   research: >
     Methods to integrate experiment and simulation data.
   
@@ -43,7 +46,7 @@
 - name: Salvatore Di Marco
   role: PhD Student
   funds: SISSA, PNRR
-  orcid: https://orcid.org/0009-0008-5365-9446
+  orcid: "0009-0008-5365-9446"
   scholar: https://scholar.google.com/citations?hl=en&user=5twQfMUAAAAJ
   research: >
     Simulation of RNA-membrane interactions.
@@ -51,7 +54,7 @@
 
 - name: Giuseppe Sacco
   role: PhD Student
-  orcid: https://orcid.org/0009-0001-0594-8349
+  orcid: "0009-0001-0594-8349"
   research: >
     Combination of chemical probing data and secondary structure prediction.
     Co-supervision with [Guido Sanguinetti (SISSA)](https://orcid.org/0000-0002-6663-8336).

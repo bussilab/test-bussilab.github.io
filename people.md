@@ -103,10 +103,13 @@ title: People
         <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone" title="Phone"><i class="fas fa-phone"></i></a>
         {% endif %}
         {% if person.orcid %}
-        <a href="{{ person.orcid }}" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
+        <a href="https://orcid.org/{{ person.orcid }}" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
         {% endif %}
         {% if person.scholar %}
         <a href="{{ person.scholar }}" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        {% endif %}
+        {% if person.prereview && person.orcid %}
+        <a href="https://prereview.org/profiles/{{ person.orcid }}" target="_blank" aria-label="PREreview" title="PREreview"><i class="fas fa-clipboard"></i></a>
         {% endif %}
         {% if person.bluesky %}
         <a href="{{ person.bluesky }}" target="_blank" aria-label="Bluesky" title="Bluesky"><i class="fab fa-bluesky"></i></a>

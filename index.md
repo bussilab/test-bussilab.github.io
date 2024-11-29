@@ -21,6 +21,7 @@ Principal Investigator, Full Professor
 
 <ul class="tight-list">
 <li><i class="fab fa-github"></i> Explore our software on <a href="https://github.com/bussilab">GitHub</a></li>
+<li><i class="fas fa-clipboard"></i> Find our open reviews in <a href="./news?query=prereview.org">the news section</a></li>
 <li><i class="fas fa-box-archive"></i> Our <a href="https://sites.google.com/site/giovannibussi">previous webpage</a> is available as a historical archive</li>
 </ul>
 
