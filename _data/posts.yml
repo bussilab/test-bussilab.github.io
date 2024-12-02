@@ -1,20 +1,22 @@
 - date: '2024-12-02'
-  text: 'Our research presented at the @cecamevents.bsky.social workshop www.cecam.org/workshop-det...!
-    Ivan Gilardoni will show a poster about our #python package MDrefine. See also
-    arxiv.org/abs/2411.07798'
+  text: 'Our research presented at the @cecamevents.bsky.social workshop <a href="https://www.cecam.org/workshop-details/generative-models-for-classical-and-quantum-matter-1274"
+    target="_blank">www.cecam.org/workshop-det...</a>! Ivan Gilardoni will show a
+    poster about our #python package MDrefine. See also <a href="https://arxiv.org/abs/2411.07798"
+    target="_blank">arxiv.org/abs/2411.07798</a>'
   uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3lcbylbbpis2j
   url: https://bsky.app/profile/bussilab.bsky.social/post/3lcbylbbpis2j
 - date: '2024-11-25'
-  text: 'New #openreview from our group at disq.us/p/3145xzw! @bussigio.bsky.social
-    and Ivan Gilardoni reviewed a #preprint by @paulrobustelli.bsky.social on the
-    determination of conformational ensembles for intrinsically disordered proteins,
-    combining molecular dynamics simulations and experimental data. Also posted at prereview.org/reviews/14225350'
+  text: 'New #openreview from our group at <a href="https://disq.us/p/3145xzw" target="_blank">disq.us/p/3145xzw</a>!
+    @bussigio.bsky.social and Ivan Gilardoni reviewed a #preprint by @paulrobustelli.bsky.social
+    on the determination of conformational ensembles for intrinsically disordered
+    proteins, combining molecular dynamics simulations and experimental data. Also posted at prereview.org/reviews/14225350'
   uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3lbsglfzn6c27
   url: https://bsky.app/profile/bussilab.bsky.social/post/3lbsglfzn6c27
 - date: '2024-11-20'
-  text: "Our first #openreview has been published! disq.us/t/4r5064p Olivier Languin-Catto\xEB\
-    n and \n@bussigio.bsky.social reviewed a #preprint by Guillaume Stirnemann and\
-    \ Glen Hocky on catch bonding behavior in vinculin-actin unbinding kinetics. Also posted at prereview.org/reviews/14231864"
+  text: "Our first #openreview has been published! <a href=\"http://disq.us/t/4r5064p\"\
+    \ target=\"_blank\">disq.us/t/4r5064p</a> Olivier Languin-Catto\xEBn and \n@bussigio.bsky.social\
+    \ reviewed a #preprint by Guillaume Stirnemann and Glen Hocky on catch bonding\
+    \ behavior in vinculin-actin unbinding kinetics. Also posted at prereview.org/reviews/14231864"
   uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3lbei2pbnok2y
   url: https://bsky.app/profile/bussilab.bsky.social/post/3lbei2pbnok2y
 - date: '2024-11-16'

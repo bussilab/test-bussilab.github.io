@@ -21,7 +21,7 @@ profile_cache = {}
 user_handle="bussilab.bsky.social"
 profile_handle="bussilab.bsky.social"
 # Configuration
-ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org', 'prereview.org']
+ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org', 'prereview.org', 'cecam.org']
 MAX_DISPLAY_LENGTH = 25
 
 # Define the base URL for hashtag queries
@@ -53,6 +53,32 @@ def fetch_authorprofile(actor):
     else:
         print(f"Error: {response.status_code}, {response.text}")
         return None
+
+def replace_links_with_html(text, facets):
+    """
+    Replaces link-type facets in the text with HTML anchor tags.
+    """
+
+    # Filter for link facets only
+    link_facets = [
+        facet for facet in facets
+        if facet.get("features", [{}])[0].get("$type") == "app.bsky.richtext.facet#link"
+    ]
+
+    # Sort facets by byteStart in descending order
+    link_facets.sort(key=lambda f: f["index"]["byteStart"], reverse=True)
+
+    # Replace links using byteStart and byteEnd
+    for facet in link_facets:
+        uri = facet["features"][0]["uri"]
+        start = facet["index"]["byteStart"]
+        end = facet["index"]["byteEnd"]
+        # Replace the text in the range with an HTML link
+        link_text = text[start:end]
+        replacement = f'<a href="{uri}" target="_blank">{link_text}</a>'
+        text = text[:start] + replacement + text[end:]
+
+    return text
 
 def get_display_name(handle):
     """
@@ -100,9 +126,12 @@ def processfeed(profile_handle,feed):
             uri=post["post"]["uri"]
             post_id = uri.split("/")[-1]  # Extracts "3lbei2pbnok2y"
             url = f"https://bsky.app/profile/{profile_handle}/post/{post_id}"
+            text=post["post"]["record"]["text"]
+            if "facets" in post["post"]["record"]:
+               text=replace_links_with_html(text, post["post"]["record"]["facets"])
             posts.append(
                 {"date":  str(date),
-                 "text": post["post"]["record"]["text"],
+                 "text": text,
                  "uri": uri,
                  "url": url
                 })
@@ -119,6 +148,7 @@ def get_current_urls(path):
 def render_markdown(text):
     """Convert Markdown to HTML."""
     return markdown.markdown(text)
+
 
 def preformat_text(content):
     """Process text for URLs after rendering Markdown."""
