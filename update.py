@@ -21,7 +21,7 @@ profile_cache = {}
 user_handle="bussilab.bsky.social"
 profile_handle="bussilab.bsky.social"
 # Configuration
-ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org', 'prereview.org']
+ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org', 'prereview.org', 'cecam.org']
 MAX_DISPLAY_LENGTH = 25
 
 # Define the base URL for hashtag queries
