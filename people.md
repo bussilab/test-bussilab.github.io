@@ -41,9 +41,6 @@ title: People
 }
 
 .person-research {
-  font-size: 0.9em;
-  color: #777;
-  margin-bottom: 15px;
 }
 
 .person-funds {
@@ -76,11 +73,21 @@ title: People
 </style>
 
 
-## Our group
+<div class="tabs-container">
+  <button class="tab-button active" data-tab="current" onclick="filterPeople('current')">Current</button>
+  <button class="tab-button" data-tab="guest" onclick="filterPeople('guest')">Guests</button>
+  <button class="tab-button" data-tab="previous" onclick="filterPeople('previous')">Previous</button>
+</div>
+
 
 <div class="people-container">
   {% for person in site.data.people %}
-  <div class="person-card" id="{{ person.name | slugify }}">
+  <div class="person-card" id="{{ person.name | slugify }}"
+    data-role="
+       {% if person.role contains 'Guest' %}guest {% endif %}
+       {% if person.previously %}previous {% endif %}
+       {% unless person.previously %}current{% endunless %}
+    ">
     <div class="person-pic">
       {% if person.pic %}
       <img src="{{ person.pic }}" alt="Picture of {{ person.name }}">
@@ -88,19 +95,26 @@ title: People
     </div>
     <div class="person-info">
       <h3>{{ person.name }}</h3>
-      <p class="person-role">{{ person.role }}</p>
+      <p class="person-role">{% if person.previously %}Previous Member{% if person.role %}, {% endif %}{% endif %}{{ person.role }}</p>
       {% if person.funds %}
       <p class="person-funds">Funded by: {{ person.funds }}</p>
+      {% elsif person.previously%}
       {% else %}
       <p class="person-funds">Funded by: SISSA</p>
       {% endif %}
-      <p class="person-research">{{ person.research | markdownify }}</p>
+      <p class="person-research">
+        {% if person.previously %}<p>{{ person.previously | markdownify }}</p> {% endif %}
+        {{ person.research | markdownify }}
+      </p>
       <div class="person-links">
         {% if person.email %}
         <a href="mailto:{{ person.email }}" target="_blank" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
         {% endif %}
         {% if person.phone %}
         <a href="tel:{{ person.phone }}" target="_blank" aria-label="Phone" title="Phone"><i class="fas fa-phone"></i></a>
+        {% endif %}
+        {% if person.thesis %}
+        <a href="{{ person.thesis }}" target="_blank" aria-label="PhD Thesis" title="PhD Thesis"><i class="fas fa-book"></i></a>
         {% endif %}
         {% if person.orcid %}
         <a href="https://orcid.org/{{ person.orcid }}" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
@@ -129,16 +143,60 @@ title: People
   {% endfor %}
 </div>
 
+<script>
+  function filterPeople(role) {
+    const cards = document.querySelectorAll('.person-card');
+    cards.forEach(card => {
+        const roles = card.getAttribute('data-role');
+        card.style.display = roles.includes(role) ? 'block' : 'none';
+    });
 
-## Guests
+    // Highlight the active tab
+    const tabs = document.querySelectorAll('.tab-button');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.getAttribute('data-tab') === role) {
+            tab.classList.add('active');
+        }
+    });
+}
 
-Some former members are participating as regular guests to our group activities. Currently:
+// Default tab on page load
+document.addEventListener('DOMContentLoaded', () => {
+    filterPeople('current');
+});
+</script>
 
-- Mattia Bernetti (Università degli Studi di Urbino Carlo Bo, Italy)
-- Thorben Fröhlking (Université de Genève, Switzerland)
-- Valerio Piomponi (Area Science Park, Trieste, Italy)
+<style>
+.tabs-container {
+  margin-top: 20px;
+  text-align: center; /* Center the tabs */
+}
 
-## Previous members
+.tab-button {
+  background-color: white;
+  border: 2px solid #1e6bb8; /* Blue border */
+  color: #1e6bb8; /* Blue text */
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  display: inline-block; /* Ensure buttons are inline */
+}
 
-Previous members of the group at listed in [this page](people-previous.md).
+.tab-button:hover {
+  background-color: #1e6bb8; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+.tab-button.active {
+  background-color: #1e6bb8; /* Blue background for active state */
+  color: white; /* White text for active state */
+  border-color: #1e6bb8; /* Match the background color */
+}
+
+</style>
+
 
