@@ -21,6 +21,11 @@ title: People
   text-align: center;
 }
 
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .person-card img {
   border-radius: 50%;
   width: 100px;
