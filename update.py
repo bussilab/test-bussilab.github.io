@@ -18,8 +18,8 @@ PROFILE_URL = "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile"
 # Cache for profile names to avoid repeated API calls
 profile_cache = {}
 
-user_handle="bussilab.bsky.social"
-profile_handle="bussilab.bsky.social"
+user_handle="bussilab.org"
+profile_handle="bussilab.org"
 # Configuration
 ALLOWED_DOMAINS = ['disq.us', 'bit.ly', 't.co', 'doi.org', 'prereview.org', 'cecam.org']
 MAX_DISPLAY_LENGTH = 25
