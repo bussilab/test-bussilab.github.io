@@ -20,7 +20,26 @@ Principal Investigator, Full Professor
 ## Resources
 
 <ul class="tight-list">
-<li><i class="fab fa-github"></i> Explore our software on <a href="https://github.com/bussilab">GitHub</a></li>
+<li><i class="fab fa-github"></i> Explore our software on <a href="https://github.com/bussilab">GitHub</a>. Highlights:
+  <ul>
+    <li><a href="https://github.com/bussilab/MDRefine">MDRefine</a>, a package to perform refinement of molecular dynamics simulation trajectories.</li>
+    <li><a href="https://github.com/bussilab/py-bussilab">py-bussilab</a>, a collection of Python tools.</li>
+  </ul>
+</li>
+  <li><i class="fa-solid fa-temperature-half"></i> Thermostats/barostats:
+    <ul>
+      <li><a href="https://github.com/GiovanniBussi/StochasticVelocityRescaling">Stochastic velocity rescaling</a> (a.k.a. v-rescale)</li>
+      <li><a href="https://github.com/bussilab/crescale">Stochastic cell rescaling</a> (a.k.a. c-rescale)</li>
+    </ul>
+  </li>
+    <li><i class="fas fa-crow"></i> PLUMED related links:
+    <ul>
+      <li><a href="https://www.plumed.org">Home page</a></li>
+      <li><a href="https://www.plumed-nest.org">PLUMED-NEST</a></li>
+      <li><a href="https://www.plumed-tutorials.org">PLUMED-Tutorials</a></li>
+    </ul>
+  </li>
+<li><i class="fa-solid fa-dna"></i>RNA force fields are <a href="https://github.com/srnas/ff">here</a> (please checkout the correct branch)</li>
 <li><i class="fas fa-clipboard"></i> Find our open reviews in <a href="./news?query=prereview.org">the news section</a></li>
 <li><i class="fas fa-box-archive"></i> Our <a href="https://sites.google.com/site/giovannibussi">previous webpage</a> is available as a historical archive</li>
 </ul>
