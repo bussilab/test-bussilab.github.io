@@ -57,7 +57,11 @@ def fetch_authorprofile(actor):
 def replace_links_with_html(text, facets):
     """
     Replaces link-type facets in the text with HTML anchor tags.
+    Handles byte-based indices to account for multi-byte characters like emojis.
     """
+
+    # Convert text to bytes
+    text_bytes = text.encode("utf-8")
 
     # Filter for link facets only
     link_facets = [
@@ -73,12 +77,19 @@ def replace_links_with_html(text, facets):
         uri = facet["features"][0]["uri"]
         start = facet["index"]["byteStart"]
         end = facet["index"]["byteEnd"]
-        # Replace the text in the range with an HTML link
-        link_text = text[start:end]
-        replacement = f'<a href="{uri}" target="_blank">{link_text}</a>'
-        text = text[:start] + replacement + text[end:]
 
-    return text
+        # Extract the link text from bytes
+        link_text_bytes = text_bytes[start:end]
+        link_text = link_text_bytes.decode("utf-8")
+
+        # Create the replacement in bytes
+        replacement = f'<a href="{uri}" target="_blank">{link_text}</a>'.encode("utf-8")
+
+        # Replace in the byte array
+        text_bytes = text_bytes[:start] + replacement + text_bytes[end:]
+
+    # Convert bytes back to string
+    return text_bytes.decode("utf-8")
 
 def get_display_name(handle):
     """
