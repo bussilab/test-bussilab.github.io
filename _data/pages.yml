@@ -5,6 +5,8 @@ pages:
   url: news
 - title: Research
   url: research
+- title: Publications
+  url: publications
 - title: People
   url: people
 - title: Join Us
