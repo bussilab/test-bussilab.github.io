@@ -1,3 +1,11 @@
+- date: '2024-12-16'
+  text: 'Our work presented at the XBW2024 workshop <a href="https://people.sissa.it/~michelet/XBW2024"
+    target="_blank">people.sissa.it/~michelet/XB...</a>! Salvatore Di Marco will show
+    our results on #RNA - #membrane interactions (see <a href="https://doi.org/10.1101/2024.11.01.618995"
+    target="_blank">doi.org/10.1101/2024...</a>), and @bussigio.bsky.social will show
+    our recent #CASP16 experience with RNA and Mg2+'
+  uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3ldfzgsrds22m
+  url: https://bsky.app/profile/bussilab.org/post/3ldfzgsrds22m
 - date: '2024-12-06'
   text: "\U0001F4E2 New #preprint describing our community effort to share #plumed\
     \ tutorials <a href=\"https://arxiv.org/abs/2412.03595\" target=\"_blank\">arxiv.org/abs/2412.03595</a>\
