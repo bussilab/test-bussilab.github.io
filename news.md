@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get("query") || "";
-  maxPosts = parseInt(urlParams.get("maxPosts") || 5, 10);
-  skipPosts = parseInt(urlParams.get("skipPosts") || 0, 10);
+  maxPosts = parseInt(urlParams.get("maxPosts") || maxPosts, 10);
+  skipPosts = parseInt(urlParams.get("skipPosts") || skipPosts, 10);
 
   document.getElementById("search-box").value = query;
   document.getElementById("posts-per-page").value = maxPosts;
