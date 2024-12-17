@@ -2,25 +2,26 @@
 title: Research
 ---
 
-Explore our [publications](./publications) for the latest insights.
-
 ## Computational approaches to RNA dynamics
 RNA molecules are highly dynamic, with functions often influenced by multiple structures.
 Our computational tools complement experimental approaches to reveal these dynamics and their biological implications.
+Explore our [publications](./publications) for the latest insights on this topic.
 
 ## Enhanced Sampling and Integrative Approaches
 We develop enhanced sampling methods to improve the precision of molecular dynamics (MD) simulations.
 Additionally, we employ integrative approaches to align computational results with experimental data,
 including force-field improvements, ensemble refinement, and other advanced techniques.
-Dig more in some of our [recent reviews](./publications?query=Integrating+experimental+data+with+molecular+simulations+to+investigate+RNA+structural+dynamics%7C+RNA+dynamics+from+experimental+and+computational+approaches%7C+Exploring+RNA+structure+and+dynamics+through+enhanced+sampling+simulations).
+You can start the exploration looking at our [recent reviews](./publications?query=Integrating+experimental+data+with+molecular+simulations+to+investigate+RNA+structural+dynamics%7C+RNA+dynamics+from+experimental+and+computational+approaches%7C+Exploring+RNA+structure+and+dynamics+through+enhanced+sampling+simulations).
 
 ## Applications of Molecular Dynamics
 Using molecular dynamics simulations, we characterize the structures and dynamics of RNA molecules,
 as well as their interactions with ions, proteins, and small molecules, providing insights into their biological roles.
+A sort of comprehensive review on the topic is [available here](./publications?query=RNA+structural+dynamics+as+captured+by+molecular+simulations%3A+A+comprehensive+overview).
 
 ## Bioinformatics for Large Systems
 To scale our studies to larger RNA systems, we utilize bioinformatics tools like secondary structure prediction,
 enabling us to integrate computational insights into complex biological contexts.
+A sample application of this approach is [here](./publications?query=Machine+learning+a+model+for+RNA+structure+prediction), but you can expect more coming.
 
 ## PLUMED
 We are involved in the development [PLUMED](https://www.plumed.org),
