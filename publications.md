@@ -9,7 +9,7 @@ title: Pubblications
 <!-- Posts List -->
 <div id="posts-container" style="display: none;">
   {% for post in site.data.biblio_preformatted %}
-    <div class="post-data" data-text="{{ post.authors | escape }} {{ post.title | escape }} {{ post.citation | escape }} {{ post.tags | escape }}">
+    <div class="post-data" data-text="{{ post.authors | escape }} {{ post.title | escape }} {{ post.citation | escape }} {{ post.doi }} {{ post.handle }} {{ post.tags | escape }}">
       <!-- Authors, Title, and Citation -->
       <p class="publication-details">
         <span class="publication-authors">{{ post.authors | safe }}</span>
@@ -296,7 +296,6 @@ body {
 }
 
 .publication-tags {
-  font-size: 0.95rem; /* Slightly smaller than the main font */
   color: #007acc;
 }
 
