@@ -427,7 +427,8 @@
   doi: 10.1021/acs.jctc.6b00982
   handle: 20.500.11767/17423
   title: Predicting the Kinetics of RNA Oligonucleotides Using Markov State Models
-- authors: "Ml\xFDnsk\xFD, Bussi"
+- arxiv: 1702.01072v1
+  authors: "Ml\xFDnsk\xFD, Bussi"
   citation: RNA 23, 712 (2017)
   doi: 10.1261/rna.060442.116
   handle: 20.500.11767/43707
@@ -622,7 +623,8 @@
   handle: 20.500.11767/13930
   title: 'Nonkinetic modeling of the mechanical unfolding of multimodular proteins:
     Theory and experiments'
-- authors: Raiteri, Gale, Bussi
+- arxiv: '1104.0773'
+  authors: Raiteri, Gale, Bussi
   citation: JOURNAL OF PHYSICS-CONDENSED MATTER 23, 334213 (2011)
   doi: 10.1088/0953-8984/23/33/334213
   handle: 20.500.11767/11900
@@ -727,7 +729,8 @@
   doi: 10.1103/PhysRevE.75.056707
   handle: 20.500.11767/16816
   title: Accurate sampling using Langevin dynamics
-- authors: Bussi, Donadio, Parrinello
+- arxiv: '0803.4060'
+  authors: Bussi, Donadio, Parrinello
   citation: JOURNAL OF CHEMICAL PHYSICS 126, 014101 (2007)
   doi: 10.1063/1.2408420
   handle: 20.500.11767/12943
@@ -834,7 +837,8 @@
   tags: '#bookchapter'
   title: 'Optical properties of organic materials: from single molecules to solid
     state'
-- authors: Ruini, Caldas, Bussi, Molinari
+- arxiv: cond-mat/0203471
+  authors: Ruini, Caldas, Bussi, Molinari
   citation: PHYSICAL REVIEW LETTERS 88, 206403 (2002)
   doi: 10.1103/PhysRevLett.88.206403
   handle: 20.500.11767/13627
