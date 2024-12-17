@@ -347,11 +347,6 @@
   handle: 20.500.11767/86014
   title: Atomistic Details of Chymotrypsin Conformational Changes upon Adsorption
     on Silica
-- authors: Cesari, Bottaro, Bussi
-  citation: BIOPHYSICAL JOURNAL 437a (2018)
-  doi: 10.1016/j.bpj.2017.11.2417
-  handle: 20.500.11767/68120
-  title: Automated Force-Field Parametrization Guided by Multisystem Ensemble Averages
 - authors: Bottaro, Bussi, Kennedy, Turner, Lindorff-Larsen
   citation: SCIENCE ADVANCES 4, eaar8521 (2018)
   doi: 10.1126/sciadv.aar8521
@@ -469,30 +464,12 @@
   doi: 10.1021/acs.jpclett.6b01905
   handle: 20.500.11767/15962
   title: Free Energy Landscape of GAGA and UUCG RNA Tetraloops
-- authors: Gil-Ley, Bottaro, Bussi
-  citation: BIOPHYSICAL JOURNAL 522a (2016)
-  doi: 10.1016/j.bpj.2015.11.2796
-  handle: 20.500.11767/15052
-  title: 'RNA Conformational Ensembles: Narrowing the GAP between Experiments and
-    Simulations with Metadynamics'
-- authors: Pinamonti, Bottaro, Micheletti, Bussi
-  citation: BIOPHYSICAL JOURNAL 330a (2016)
-  doi: 10.1016/j.bpj.2015.11.1772
-  handle: 20.500.11767/15070
-  title: 'RNA Conformational Fluctuations from Elastic Network Models: A Comparison
-    with Molecular Dynamics and Shape Experiments'
 - arxiv: '1603.08952'
   authors: Bottaro, Gil-Ley, Bussi
   citation: NUCLEIC ACIDS RESEARCH 44, 5883 (2016)
   doi: 10.1093/nar/gkw239
   handle: 20.500.11767/11768
   title: RNA folding pathways in stop motion
-- authors: Poblete, Bottaro, Bussi
-  citation: BIOPHYSICAL JOURNAL 235a (2015)
-  doi: 10.1016/j.bpj.2014.11.1300
-  handle: 20.500.11767/15071
-  title: A Nucleobase-Centric Coarse-Grained Model for Structure Prediction of RNA
-    Fragments
 - arxiv: '1412.3916'
   authors: "Ferrarotti, Bottaro, P\xE9rez-Villa, Bussi"
   citation: JOURNAL OF CHEMICAL THEORY AND COMPUTATION 11, 139 (2015)
@@ -587,22 +564,12 @@
   tags: '#bookchapter'
   title: Probing riboswitch binding sites with molecular docking, focused libraries,
     and in-line probing assays
-- authors: Di Palma, Colizzi, Bussi
-  citation: BIOPHYSICAL JOURNAL 285a (2014)
-  doi: 10.1016/j.bpj.2013.11.1665
-  handle: 20.500.11767/15054
-  title: Role of Magnesium Ions and Ligand Stacking in the Adenine Riboswitch Folding
 - arxiv: '1410.1271'
   authors: Bottaro, Di Palma, Bussi
   citation: NUCLEIC ACIDS RESEARCH 42, 13306 (2014)
   doi: 10.1093/nar/gku972
   handle: 20.500.11767/17373
   title: The role of nucleobase interactions in RNA structure and dynamics
-- authors: Di Palma, Colizzi, Bussi
-  citation: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY (2013)
-  handle: 20.500.11767/15076
-  title: 'Conformational transitions in adenine sensing riboswitch: A computational
-    study'
 - arxiv: '1309.5717'
   authors: Di Palma, Colizzi, Bussi
   citation: RNA 19, 1517 (2013)
@@ -610,14 +577,6 @@
   handle: 20.500.11767/11521
   title: Ligand-induced stabilization of the aptamer terminal helix in the add adenine
     riboswitch
-- authors: Darvas, Bussi
-  citation: EUROPEAN BIOPHYSICS JOURNAL WITH BIOPHYSICS LETTERS S191 (2013)
-  handle: 20.500.11767/15055
-  title: Nearest neighbor parameters for RNA from metadynamics simulations
-- authors: Colizzi, Bussi
-  citation: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY (2013)
-  handle: 20.500.11767/15069
-  title: 'RNA unwinding: What we can learn from atomistic simulations'
 - arxiv: '1307.5565'
   authors: Do, Carloni, Varani, Bussi
   citation: JOURNAL OF CHEMICAL THEORY AND COMPUTATION 9, 1720 (2013)
@@ -631,10 +590,6 @@
   handle: 20.500.11767/11517
   title: Structural role of uracil DNA glycosylase for the recognition of uracil in
     DNA duplexes. Clues from atomistic simulations
-- authors: Colizzi, Levy, Bussi
-  citation: EUROPEAN BIOPHYSICS JOURNAL WITH BIOPHYSICS LETTERS S190 (2013)
-  handle: 20.500.11767/15063
-  title: Symmetry and asymmetry in the unwinding of nucleic acids
 - arxiv: '1205.3282'
   authors: Ferretti, Mallia, Martin-Samos, Bussi, Ruini, Montanari, Harrison
   citation: PHYSICAL REVIEW B 85, 235105 (2012)
@@ -661,11 +616,6 @@
   handle: 20.500.11767/15016
   title: 'Role of the subunit interactions in the conformational transitions in adult
     human hemoglobin: An explicit solvent molecular dynamics study'
-- authors: Valbuena, Bussi
-  citation: BIOPHYSICAL JOURNAL 129a (2012)
-  doi: 10.1016/j.bpj.2011.11.720
-  handle: 20.500.11767/15067
-  title: Understanding CNG Channels Gating Process by MD Simulations
 - authors: Benedetti, Micheletti, Bussi, Sekatskii, Dietler
   citation: BIOPHYSICAL JOURNAL 101, 1504 (2011)
   doi: 10.1016/j.bpj.2011.07.047
@@ -782,24 +732,12 @@
   doi: 10.1063/1.2408420
   handle: 20.500.11767/12943
   title: Canonical sampling through velocity rescaling
-- authors: Bussi, Parrinello
-  citation: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY (2007)
-  handle: 20.500.11767/15061
-  title: COMP 271-Accurate sampling using stochastic dynamics
-- authors: Bussi, Donadio, Parrinello
-  citation: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY (2007)
-  handle: 20.500.11767/15062
-  title: COMP 8-Canonical sampling through velocity rescaling
 - arxiv: '0803.4444'
   authors: Ceriotti, Bussi, Parrinello
   citation: PHYSICAL REVIEW E 76, 026707 (2007)
   doi: 10.1103/PhysRevE.76.026707
   handle: 20.500.11767/17410
   title: Conjugate gradient heat bath for ill-conditioned actions
-- authors: Bussi, Gervasio, Laio, Parrinello
-  citation: ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY 410-PHIS (2007)
-  handle: 20.500.11767/15066
-  title: PHYS 410-Beta-hairpin folding with parallel-tempering and metadynamics
 - arxiv: '0804.0175'
   authors: Bussi, Laio, Parrinello
   citation: PHYSICAL REVIEW LETTERS 96, 090601 (2006)
@@ -821,6 +759,7 @@
   citation: PHYSICS OF SEMICONDUCTORS, PTS A AND B 772, 1025 (2005)
   doi: 10.1063/1.1994460
   handle: 20.500.11767/15206
+  tags: '#proceedings'
   title: A symmetrized-basis approach to excitons in carbon nanotubes
 - authors: Hummer, Ambrosch-Draxl, Bussi, Ruini, Caldas, Molinari, Laskowski, Christensen
   citation: PHYSICA STATUS SOLIDI B-BASIC SOLID STATE PHYSICS 242, 1754 (2005)
@@ -837,6 +776,7 @@
   citation: PHYSICS OF SEMICONDUCTORS, PTS A AND B 772, 1085 (2005)
   doi: 10.1063/1.1994489
   handle: 20.500.11767/15152
+  tags: '#proceedings'
   title: 'Light-emitting polymers: A first-principles analysis of singlet-exciton
     harvesting in PPV'
 - arxiv: cond-mat/0408583
@@ -846,11 +786,6 @@
   handle: 20.500.11767/14223
   title: Quantum interferences in the Raman cross section for the radial breathing
     mode in metallic carbon nanotubes
-- authors: Menendez, Chang, Bussi, Ruini, Molinari
-  citation: 'Session D27: Focus Session: Carbon Nanotubes: Raman Spectroscopy (2005)'
-  handle: 20.500.11767/15058
-  title: Theory of Resonance Raman Scattering in Carbon Nanotubes using Excitonic
-    Intermediate States
 - authors: Ferretti, Ruini, Bussi, Molinari, Caldas
   citation: PHYSICAL REVIEW B 69, 205205 (2004)
   doi: 10.1103/PhysRevB.69.205205
