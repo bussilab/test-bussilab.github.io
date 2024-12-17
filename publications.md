@@ -67,7 +67,7 @@ title: Pubblications
 
 <!-- Posts Per Page -->
 <div id="posts-per-page-controls">
-  <label for="posts-per-page">Posts per page:</label>
+  <label for="posts-per-page">Records per page:</label>
   <select id="posts-per-page" onchange="updateMaxPosts()">
     <option value="10" selected>10</option>
     <option value="20">20</option>
