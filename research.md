@@ -25,5 +25,5 @@ enabling us to integrate computational insights into complex biological contexts
 We are involved in the development [PLUMED](https://www.plumed.org),
 an open-source software widely used for enhanced sampling and integrative methods in molecular dynamics simulations.
 PLUMED integrates seamlessly with various MD engines, enabling advanced methodologies that are central to our research.
-Dig more in our [PLUMED related papers](./publications?query=plumed).
+Dig more in our [PLUMED related papers](./publications?query=plumed%7C+Promoting+transparency+and+reproducibility+in+enhanced+molecular+simulations).
 
