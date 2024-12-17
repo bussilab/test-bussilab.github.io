@@ -67,27 +67,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function filterPosts(allPosts) {
-  const query = document.getElementById('search-box').value.toLowerCase();
-
+  const query = normalizeString(document.getElementById('search-box').value.toLowerCase());
+      
   // Update the query parameter in the URL
   const url = new URL(window.location);
   url.searchParams.set("query", query);
   url.searchParams.set("maxPosts", maxPosts);
   url.searchParams.set("skipPosts", skipPosts);
   window.history.replaceState({}, '', url);
-
+        
   // Filter posts based on the query
   filteredPosts = allPosts.filter(post => {
-    const text = post.getAttribute('data-text').toLowerCase();
+    const text = normalizeString(post.getAttribute('data-text').toLowerCase());
     const andGroups = query.split(/\s*&\s*/); // Split by "&" for "AND"
     return andGroups.every(andGroup => {
       const orTerms = andGroup.split(/\s*\|\s*/); // Split by "|" for "OR"
       return orTerms.some(term => text.includes(term.trim()));
-    });
-  });
-
+    }); 
+  });   
+        
   // Immediately render posts after filtering
   renderPosts();
+}       
+        
+function normalizeString(str) {
+  if (str.normalize) {
+    // Modern browsers: Use Unicode normalization
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  } else {
+    // Fallback: Manual diacritic removal for older browsers
+    const diacriticMap = {
+      'ä': 'a', 'á': 'a', 'à': 'a', 'ã': 'a', 'â': 'a', 'å': 'a', 'ā': 'a',
+      'ö': 'o', 'ó': 'o', 'ò': 'o', 'õ': 'o', 'ô': 'o', 'ø': 'o', 'ō': 'o',
+      'ü': 'u', 'ú': 'u', 'ù': 'u', 'ũ': 'u', 'û': 'u', 'ū': 'u',
+      'ë': 'e', 'é': 'e', 'è': 'e', 'ẽ': 'e', 'ê': 'e', 'ē': 'e',
+      'ï': 'i', 'í': 'i', 'ì': 'i', 'ĩ': 'i', 'î': 'i', 'ī': 'i',
+      'ç': 'c', 'ñ': 'n', 'ÿ': 'y', 'ß': 'ss'
+    };
+    return str.split('').map(char => diacriticMap[char] || char).join('');
+  }
 }
 
 function renderPosts() {
