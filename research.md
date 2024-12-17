@@ -11,7 +11,7 @@ Explore our [publications](./publications) for the latest insights on this topic
 We develop enhanced sampling methods to improve the precision of molecular dynamics (MD) simulations.
 Additionally, we employ integrative approaches to align computational results with experimental data,
 including force-field improvements, ensemble refinement, and other advanced techniques.
-You can start the exploration looking at our [recent reviews](./publications?query=Integrating+experimental+data+with+molecular+simulations+to+investigate+RNA+structural+dynamics%7C+RNA+dynamics+from+experimental+and+computational+approaches%7C+Exploring+RNA+structure+and+dynamics+through+enhanced+sampling+simulations).
+You can start the exploration looking at [our reviews][./publications?query=Integrating+experimental+data+with+molecular+simulations+to+investigate+RNA+structural+dynamics%7C+RNA+dynamics+from+experimental+and+computational+approaches%7C+Exploring+RNA+structure+and+dynamics+through+enhanced+sampling+simulations%7CToward+empirical+force+fields+that+match+experimental+observables%7CUsing+the+maximum+entropy+principle+to+combine+simulations+and+solution+experiments) in this field.
 
 ## Applications of Molecular Dynamics
 Using molecular dynamics simulations, we characterize the structures and dynamics of RNA molecules,
