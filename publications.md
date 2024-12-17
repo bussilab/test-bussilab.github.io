@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Attach the input listener to the search box
   document.getElementById("search-box").addEventListener("input", () => {
+    skipPosts = 0; // Reset to the first page when search input changes
     filterPosts(allPosts);
   });
 
