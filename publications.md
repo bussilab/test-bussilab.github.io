@@ -46,6 +46,11 @@ title: Pubblications
           <img alt="bioRxiv link" src="https://img.shields.io/badge/bioRxiv-orange">
         </a>
         {% endif %}
+        {% if post.doi %}
+        <a href="https://juleskreuer.eu/projects/citation-badge">
+           <img alt="Citation Badge" src="https://api.juleskreuer.eu/citation-badge.php?doi={{ post.doi }}">
+        </a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
