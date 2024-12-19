@@ -111,7 +111,7 @@ def replace_handles_with_display_names(post_text):
     """
     Replaces @handles in the text with their corresponding display names.
     """
-    handle_pattern = re.compile(r"@([a-zA-Z0-9_\.]+)")  # Match handles like @xxxx
+    handle_pattern = re.compile(r"@([a-zA-Z0-9_\.\-]+)")  # Match handles like @xxxx
     return handle_pattern.sub(lambda match: get_display_name(match.group(1)), post_text)
 
 # Function to format the text with the '|' style
