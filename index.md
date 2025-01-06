@@ -20,11 +20,6 @@ Principal Investigator, Full Professor
 ## Resources
 
 <ul class="tight-list">
-<li><i class="fas fa-newspaper"></i> Find out what's new in the <a target="_blank" href="./news">news section</a></li>
-<li><i class="fas fa-flask-vial"></i> Read about our research in the <a target="_blank" href="./research">research section</a></li>
-<li><i class="fas fa-newspaper"></i> Dig more in the <a target="_blank" href="./research">publication section</a></li>
-<li><i class="fas fa-user"></i> Discover our team in the <a target="_blank" href="./research">people section</a></li>
-<li><i class="fas fa-user-plus"></i> Find out how to work with us in the <a target="_blank" href="./research">join us section</a></li>
 <li><i class="fab fa-github"></i> Explore our software on <a target="_blank" href="https://github.com/bussilab">GitHub</a>. Highlights:
   <ul>
     <li><a target="_blank" href="https://github.com/bussilab/MDRefine">MDRefine</a>, a package to perform refinement of molecular dynamics simulation trajectories.</li>
