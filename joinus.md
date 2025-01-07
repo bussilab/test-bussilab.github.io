@@ -8,7 +8,7 @@ Join the [Physics and Chemistry of Biological Systems PhD program](https://www.s
 
 - **Schedule**: Entrance exams are typically held in spring and summer. Dates may vary, so check [the news section](./news?query=%23joinus%7Cjoin+us) for updates.
 - **Program Structure**: Selected candidates will attend approximately 9 months of lectures before choosing among the available research groups, including ours.
-- **2025 call**: Information on the call for the academic year 2025/2026 are available [here](https://www.sissa.it/sites/default/files/2024-12/Scheda%20info%202025%20msb.pdf).
+- **2025 call**: Information on the call for the academic year 2025/2026 is available [here](https://www.sissa.it/sites/default/files/2024-12/Scheda%20info%202025%20msb.pdf).
 
 ---
 
