@@ -1,5 +1,7 @@
 
 We develop and apply advanced computational methods to study RNA, the most intriguing actor in molecular biology.
+We are part of the <a target="_blank" href="https://msb.sissa.it">Molecular and Statistical Biophysics group</a>
+at <a target="_blank" href="https://www.sissa.it">SISSA</a>.
 
 ---
 
