@@ -4,7 +4,7 @@ title: Join Us
 
 ## PhD Fellowships
 
-Join the [Physics and Chemistry of Biological Systems PhD program](https://www.sissa.it/sbp/) (recently renamed Molecular and Statistical Biophysics) at [SISSA](https://www.sissa.it), which offers 4-year fully funded positions. 
+Join the [Molecular and Statistical Biophysics PhD program](https://msb.sissa.it/phd-program) (previously known as Physics and Chemistry of Biological Systems) at [SISSA](https://www.sissa.it), which offers 4-year fully funded positions. 
 
 - **Schedule**: Entrance exams are typically held in spring and summer. Dates may vary, so check [the news section](./news?query=%23joinus%7Cjoin+us) for updates.
 - **Program Structure**: Selected candidates will attend approximately 9 months of lectures before choosing among the available research groups, including ours.
