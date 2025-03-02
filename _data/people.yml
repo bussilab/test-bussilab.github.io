@@ -132,11 +132,6 @@
   scholar: https://scholar.google.com/citations?user=tyxMNLoAAAAJ
   previously: PhD Student (2013-2016)
 
-- name: Marco Jacopo Ferrarotti
-  orcid: "0000-0002-2158-2930"
-  scholar: https://scholar.google.com/citations?user=EGjG6TsAAAAJ
-  previously: Undergraduate Student, Master in Physics of Complex Systems (2013)
-
 - name: Sandro Bottaro
   orcid: "0000-0003-1606-890X"
   scholar: https://scholar.google.com/citations?user=d1Cx8SAAAAAJ
@@ -158,6 +153,11 @@
   orcid: "0000-0002-3758-9045"
   scholar: https://scholar.google.com/citations?user=vScZn0wAAAAJ
   previously: PhD Student (2011-2014)
+
+- name: Marco Jacopo Ferrarotti
+  orcid: "0000-0002-2158-2930"
+  scholar: https://scholar.google.com/citations?user=EGjG6TsAAAAJ
+  previously: Undergraduate Student, Master in Physics of Complex Systems (2013)
 
 - name: Francesco Colizzi
   orcid: "0000-0001-5601-1452"
