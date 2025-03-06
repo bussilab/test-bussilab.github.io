@@ -1,3 +1,10 @@
+- date: '2025-03-06'
+  text: 'Our Research presented at the Chemistry Department of the Ecole Normale Superieure,
+    Paris. @bussigio.bsky.social will present our efforts to refine force fields for
+    modified nucleotides, to simulate #RNA at constant pH, and to enhance Mg-RNA sampling
+    #casp16. Host: Guillaume Stirnemann'
+  uri: at://did:plc:bfw2iehmbpwq3wjhzya2m2ck/app.bsky.feed.post/3ljp2g62abc2o
+  url: https://bsky.app/profile/bussilab.org/post/3ljp2g62abc2o
 - date: '2025-03-05'
   text: 'Our research presented today at @pasteur.fr ! @bussigio.bsky.social will
     give a seminar sharing our approaches to reconstruct #RNA dynamics using #moleculardynamics,
