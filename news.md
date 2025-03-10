@@ -32,14 +32,14 @@ title: News
 <div id="posts-per-page-controls">
   <label for="posts-per-page">Posts per page:</label>
   <select id="posts-per-page" onchange="updateMaxPosts()">
-    <option value="10" selected>10</option>
+    <option value="5" selected>5</option>
     <option value="20">20</option>
     <option value="50">50</option>
   </select>
 </div>
 
 <script>
-let maxPosts = 10; // Default posts per page
+let maxPosts = 5; // Default posts per page
 let skipPosts = 0; // Default start at the first post
 let filteredPosts = []; // Store filtered posts after search
 
