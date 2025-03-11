@@ -28,18 +28,6 @@
   tags: '#preprint'
   title: "MDRefine: a Python package for refining Molecular Dynamics trajectories\n\
     \  with experimental data"
-- arxiv: '2412.03595'
-  authors: "Tribello, Bonomi, Bussi, Camilloni, Armstrong, Arsiccio, Aureli, Ballabio,\
-    \ Bernetti, Bonati, Brookes, Brotzakis, Capelli, Ceriotti, Chan, Cossio, Dasetty,\
-    \ Donadio, Ensing, Ferguson, Fraux, Gale, Gervasio, Giorgino, Herringer, Hocky,\
-    \ Hoff, Invernizzi, Languin-Catt\xF6en, Leone, Limongelli, Lopez-Acevedo, Marinelli,\
-    \ Martinez, Masetti, Mehdi, Michaelides, Murtada, Parrinello, Piaggi, Pietropaolo,\
-    \ Pietrucci, Pipolo, Pritchard, Raiteri, Raniolo, Rapetti, Rizzi, Rydzewski, Salvalaglio,\
-    \ Schran, Seal, Zadeh, Silva, Spiwok, Stirnemann, Sucerquia, Tiwary, Valsson,\
-    \ Vendruscolo, Voth, White, Wu"
-  citation: arXiv:2412.03595
-  tags: '#preprint'
-  title: 'PLUMED Tutorials: a collaborative, community-driven learning ecosystem'
 - arxiv: '2407.16584'
   authors: "Amaro, \xC5qvist, Bahar, Battistini, Bellaiche, Beltran, Biggin, Bonomi,\
     \ Bowman, Bryce, Bussi, Carloni, Case, Cavalli, Chang, III, Cheung, Chipot, Chong,\
@@ -61,11 +49,24 @@
   title: The need to implement FAIR principles in biomolecular simulations
 - authors: "Jane\u010Dek, K\xFChrov\xE1, Ml\xFDnsk\xFD, Stadlbauer, Otyepka, Bussi,\
     \ \u0160poner, Ban\xE1\u0161"
-  citation: JOURNAL OF COMPUTATIONAL CHEMISTRY e27535 (2025)
+  citation: JOURNAL OF COMPUTATIONAL CHEMISTRY 46, e27535 (2025)
   doi: 10.1002/jcc.27535
   handle: 20.500.11767/144070
-  title: "Computer Folding of Parallel DNA G\u2010Quadruplex: Hitchhiker's Guide to\
-    \ the Conformational Space"
+  title: 'Computer Folding of Parallel DNA G-Quadruplex: Hitchhiker''s Guide to the
+    Conformational Space'
+- arxiv: '2412.03595'
+  authors: "Tribello, Bonomi, Bussi, Camilloni, Armstrong, Arsiccio, Aureli, Ballabio,\
+    \ Bernetti, Bonati, Brookes, Brotzakis, Capelli, Ceriotti, Chan, Cossio, Dasetty,\
+    \ Donadio, Ensing, Ferguson, Fraux, Gale, Gervasio, Giorgino, Herringer, Hocky,\
+    \ Hoff, Invernizzi, Languin-Catto\xEBn, Leone, Limongelli, Lopez-Acevedo, Marinelli,\
+    \ Febrer, Masetti, Mehdi, Michaelides, Murtada, Parrinello, Piaggi, Pietropaolo,\
+    \ Pietrucci, Pipolo, Pritchard, Raiteri, Raniolo, Rapetti, Rizzi, Rydzewski, Salvalaglio,\
+    \ Schran, Seal, Shayesteh, Silva, Spiwok, Stirnemann, Sucerquia, Tiwary, Valsson,\
+    \ Vendruscolo, Voth, White, Wu"
+  citation: THE JOURNAL OF CHEMICAL PHYSICS 092501 (2025)
+  doi: 10.1063/5.0251501
+  handle: 20.500.11767/145470
+  title: 'PLUMED Tutorials: A collaborative, community-driven learning ecosystem'
 - arxiv: '2311.13532'
   authors: "Gilardoni, Fr\xF6hlking, Bussi"
   citation: JOURNAL OF PHYSICAL CHEMISTRY LETTERS 15, 1204 (2024)
@@ -191,6 +192,7 @@
     single-molecule surface-enhanced Raman scattering
 - authors: "Ml\xFDnsk\xFD, Jane\u010Dek, K\xFChrov\xE1, Fr\xF6hlking, Otyepka, Bussi,\
     \ Ban\xE1\u0161, \u0160poner"
+  biorxiv: 10.1101/2021.11.30.470631
   citation: JOURNAL OF CHEMICAL THEORY AND COMPUTATION 18, 2642 (2022)
   doi: 10.1021/acs.jctc.1c01222
   handle: 20.500.11767/128029
@@ -558,8 +560,7 @@
   handle: 20.500.11767/11534
   title: 'PLUMED 2: New feathers for an old bird'
 - authors: Colizzi, Lamontagne, Lafontaine, Bussi
-  citation: 'Therapeutic applications of ribozymes and riboswitches : methods and
-    protocols 1103, 141 (2014)'
+  citation: METHODS IN MOLECULAR BIOLOGY 1103, 141 (2014)
   doi: 10.1007/978-1-62703-730-3_11
   handle: 20.500.11767/15102
   tags: '#bookchapter'
