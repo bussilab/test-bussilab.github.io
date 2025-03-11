@@ -4,12 +4,6 @@
   tags: '#preprint'
   title: All atom molecular dynamics simulations enable ensemble refinement of flexible
     and mismodelled cryo-EM derived RNA structures
-- authors: Di Marco, Aupic, Bussi, Magistrato
-  biorxiv: 10.1101/2024.11.01.618995
-  citation: biorxiv:10.1101/2024.11.01.618995
-  tags: '#preprint'
-  title: All-atom simulations elucidate the molecular mechanismunderlying RNA-membrane
-    interactions
 - arxiv: '2410.16064'
   authors: Silva, Bussi
   citation: arXiv:2410.16064
@@ -47,6 +41,13 @@
   citation: arXiv:2407.16584
   tags: '#preprint'
   title: The need to implement FAIR principles in biomolecular simulations
+- authors: "Di Marco, Aupi\u010D, Bussi, Magistrato"
+  biorxiv: 10.1101/2024.11.01.618995
+  citation: NANO LETTERS (2025)
+  doi: 10.1021/acs.nanolett.5c01254
+  handle: 20.500.11767/145610
+  title: "All-Atom Simulations Elucidate the Molecular Mechanism Underlying RNA\u2013\
+    Membrane Interactions"
 - authors: "Jane\u010Dek, K\xFChrov\xE1, Ml\xFDnsk\xFD, Stadlbauer, Otyepka, Bussi,\
     \ \u0160poner, Ban\xE1\u0161"
   citation: JOURNAL OF COMPUTATIONAL CHEMISTRY 46, e27535 (2025)
@@ -59,10 +60,10 @@
     \ Bernetti, Bonati, Brookes, Brotzakis, Capelli, Ceriotti, Chan, Cossio, Dasetty,\
     \ Donadio, Ensing, Ferguson, Fraux, Gale, Gervasio, Giorgino, Herringer, Hocky,\
     \ Hoff, Invernizzi, Languin-Catto\xEBn, Leone, Limongelli, Lopez-Acevedo, Marinelli,\
-    \ Febrer, Masetti, Mehdi, Michaelides, Murtada, Parrinello, Piaggi, Pietropaolo,\
+    \ Febrer Martinez, Masetti, Mehdi, Michaelides, Murtada, Parrinello, Piaggi, Pietropaolo,\
     \ Pietrucci, Pipolo, Pritchard, Raiteri, Raniolo, Rapetti, Rizzi, Rydzewski, Salvalaglio,\
-    \ Schran, Seal, Shayesteh, Silva, Spiwok, Stirnemann, Sucerquia, Tiwary, Valsson,\
-    \ Vendruscolo, Voth, White, Wu"
+    \ Schran, Seal, Shayesteh Zadeh, Silva, Spiwok, Stirnemann, Sucerquia, Tiwary,\
+    \ Valsson, Vendruscolo, Voth, White, Wu"
   citation: THE JOURNAL OF CHEMICAL PHYSICS 092501 (2025)
   doi: 10.1063/5.0251501
   handle: 20.500.11767/145470
@@ -308,15 +309,18 @@
   handle: 20.500.11767/92640
   title: Improving the Performance of the Amber RNA Force Field by Tuning the Hydrogen-Bonding
     Interactions
-- authors: Bonomi, Bussi, Camilloni, Tribello, Banas, Barducci, Bernetti, Bolhuis,
-    Bottaro, Branduardi, Capelli, Carloni, Ceriotti, Cesari, Chen, Chen, Colizzi,
-    De, De, Donadio, Drobot, Ensing, Ferguson, Filizola, Fraser, Fu, Gasparotto, Gervasio,
-    Giberti, Gil-Ley, Giorgino, Heller, Hocky, Iannuzzi, Invernizzi, Jelfs, Jussupow,
-    Kirilin, Laio, Limongelli, Lindorff-Larsen, Lohr, Marinelli, Martin-Samos, Masetti,
-    Meyer, Michaelides, Molteni, Morishita, Nava, Paissoni, Papaleo, Parrinello, Pfaendtner,
-    Piaggi, Piccini, Pietropaolo, Pietrucci, Pipolo, Provasi, Quigley, Raiteri, Raniolo,
-    Rydzewski, Salvalaglio, Sosso, Spiwok, Sponer, Swenson, Tiwary, Valsson, Vendruscolo,
-    Voth, White
+- authors: Bonomi M., Bussi G., Camilloni C., Tribello G. A., Banas P., Barducci A.,
+    Bernetti, Bolhuis P. G., Bottaro S., Branduardi D., Capelli R., Carloni P., Ceriotti
+    M., Cesari A., Chen H., Chen W., Colizzi F., De S., De La Pierre M., Donadio D.,
+    Drobot V., Ensing B., Ferguson A. L., Filizola M., Fraser J. S., Fu H., Gasparotto
+    P., Gervasio F. L., Giberti F., Gil-Ley A., Giorgino T., Heller G. T., Hocky G.
+    M., Iannuzzi M., Invernizzi M., Jelfs K. E., Jussupow A., Kirilin E., Laio A.,
+    Limongelli V., Lindorff-Larsen K., Lohr T., Marinelli F., Martin-Samos L., Masetti
+    M., Meyer R., Michaelides A., Molteni C., Morishita T., Nava M., Paissoni C.,
+    Papaleo E., Parrinello M., Pfaendtner J., Piaggi P., Piccini G. M., Pietropaolo
+    A., Pietrucci F., Pipolo S., Provasi D., Quigley D., Raiteri P., Raniolo S., Rydzewski
+    J., Salvalaglio M., Sosso G. C., Spiwok V., Sponer J., Swenson D. W. H., Tiwary
+    P., Valsson O., Vendruscolo M., Voth G. A., White A.
   citation: NATURE METHODS 16, 670 (2019)
   doi: 10.1038/s41592-019-0506-8
   handle: 20.500.11767/100676
@@ -522,7 +526,7 @@
   title: 'Kissing loop interaction in adenine riboswitch: Insights from umbrella sampling
     simulations'
 - arxiv: '1502.05667'
-  authors: Bottaro, Di, Bussi
+  authors: Bottaro, Di Palma, Bussi
   citation: RNA & DISEASE 1 (2015)
   doi: 10.14800/rd.544
   handle: 20.500.11767/12408
