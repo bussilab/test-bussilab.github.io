@@ -17,11 +17,8 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <div class="header-content">
-          <img src="logos/rna2d.png" alt="Left logo" class="header-logo left-logo">
-          <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <img src="logos/rna2d.png" alt="Right logo" class="header-logo right-logo">
-      </div>
+      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% assign current_path = page.path | remove: '.md' %}
       {% if current_path == 'index' %}
@@ -37,29 +34,6 @@
         {% endif %}
       {% endfor %}
     </header>
-
-<style>
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centers title and images */
-  gap: 20px; /* Space between elements */
-}
-
-.header-logo {
-  width: 60px; /* Adjust size as needed */
-  height: auto;
-}
-
-.left-logo {
-  margin-right: auto;
-}
-
-.right-logo {
-  margin-left: auto;
-}
-</style>
-
 
     <main id="content" class="main-content" role="main">
       {{ content }}
