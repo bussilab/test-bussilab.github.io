@@ -17,6 +17,13 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
+      <div class="logo-container">
+        <img src="logos/rna2d.png" alt="RNA Logo" width="130" class="rotating-logo"/>
+        <img src="logos/rnadynamics.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/basepair.png" alt="RNA Logo" width="130" class="rotating-logo"/>
+        <img src="logos/rnadynamics.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/rna2d.png" alt="RNA Logo" width="130" class="rotating-logo"/>
+      </div>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% assign current_path = page.path | remove: '.md' %}
@@ -33,6 +40,44 @@
         {% endif %}
       {% endfor %}
     </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".rotating-logo");
+    images.forEach(img => {
+      const randomRotation = (Math.random() * 60) - 30;
+      img.style.transform = `rotate(${randomRotation}deg)`;
+    });
+  });
+</script>
+
+<style>
+@media (max-width: 768px) {
+  .logo-container img:nth-child(n+4) { /* Hides 4th and 5th logos on small screens */
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-container img:nth-child(n+3) { /* Hides 3rd, 4th, and 5th logos on very small screens */
+    display: none;
+  }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Ensures center alignment */
+  align-items: center; /* Aligns images vertically */
+  max-width: 90%; /* Slightly reduce width */
+  margin: 0 auto; /* Ensures centering */
+}
+
+.rotating-logo {
+  max-width: 120px; /* Slightly smaller logos */
+  margin: 0 20px; /* Adds more space between logos */
+  opacity: 0.9; /* Optional: Reduce intensity slightly */
+}
+</style>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
