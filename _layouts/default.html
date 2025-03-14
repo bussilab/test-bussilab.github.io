@@ -17,11 +17,13 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
-      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
-      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
-      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
-      <img src="logos/rna2d.png" alt="RNA Logo"  width="100"/>
+      <div class="logo-container">
+        <img src="logos/rna2d.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/rna2d.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/rna2d.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/rna2d.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+        <img src="logos/rna2d.png" alt="RNA Logo" width="100" class="rotating-logo"/>
+      </div>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% assign current_path = page.path | remove: '.md' %}
@@ -38,6 +40,16 @@
         {% endif %}
       {% endfor %}
     </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".rotating-logo");
+    images.forEach(img => {
+      const randomRotation = Math.floor(Math.random() * 360); // Random rotation between 0 and 360 degrees
+      img.style.transform = `rotate(${randomRotation}deg)`;
+    });
+  });
+</script>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
