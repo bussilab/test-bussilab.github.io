@@ -1,5 +1,5 @@
 ---
-title: Pubblications
+title: Publications
 ---
 
 <!-- Search Box -->
