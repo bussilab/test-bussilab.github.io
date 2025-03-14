@@ -53,17 +53,22 @@
 
 <style>
 @media (max-width: 768px) {
-  .header-logos img:nth-child(1),
-  .header-logos img:nth-child(5) {
-    display: none; /* Hide outermost images on mobile */
+  .logo-container img:nth-child(n+4) { /* Hides 4th and 5th logos on small screens */
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-container img:nth-child(n+3) { /* Hides 3rd, 4th, and 5th logos on very small screens */
+    display: none;
   }
 }
 
 .logo-container {
   display: flex;
-  justify-content: space-around; /* Instead of space-evenly */
-  max-width: 90%; /* Slightly reduce width */
+  justify-content: space-evenly; /* Distributes images with even spacing */
   align-items: center;
+  width: 100%;
   padding: 20px 0; /* Adds vertical padding to reduce visual density */
 }
 
@@ -72,13 +77,6 @@
   margin: 0 20px; /* Adds more space between logos */
   opacity: 0.9; /* Optional: Reduce intensity slightly */
 }
-
-.header-logo:first-child,
-.header-logo:last-child {
-  opacity: 0.7;
-}
-
-
 </style>
 
     <main id="content" class="main-content" role="main">
