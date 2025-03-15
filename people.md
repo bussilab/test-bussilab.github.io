@@ -72,6 +72,7 @@ title: People
 }
 </style>
 
+<img src="images/group-pic.jpg" alt="Group Picture">
 
 <div class="tabs-container">
   <button class="tab-button active" data-tab="current" onclick="filterPeople('current')">Current</button>
