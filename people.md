@@ -70,9 +70,17 @@ title: People
     width: 90%;
   }
 }
+
+.group-picture {
+  display: block;
+  max-width: 80%; /* Adjust this value to match the menu width */
+  width: 100%;
+  height: auto; /* Keeps the aspect ratio */
+  margin: 20px auto; /* Centers the image */
+}
 </style>
 
-<img src="images/group-pic.jpg" alt="Group Picture">
+<img src="images/group-pic.jpg" alt="Group Picture" class="group-picture">
 
 <div class="tabs-container">
   <button class="tab-button active" data-tab="current" onclick="filterPeople('current')">Current</button>
