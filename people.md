@@ -73,10 +73,12 @@ title: People
 
 .group-picture {
   display: block;
-  width: 30%; /* Adjust this value to match the menu width */
-  height: auto; /* Keeps the aspect ratio */
-  margin: 20px auto; /* Centers the image */
+  max-width: 50%; /* Adjust to match your menu width */
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
+
 </style>
 
 <img src="images/group-pic.jpg" alt="Group Picture" class="group-picture">
