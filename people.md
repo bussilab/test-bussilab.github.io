@@ -73,10 +73,12 @@ title: People
 
 .group-picture {
   display: block;
-  max-width: 50%; /* Adjust to match your menu width */
+  max-width: 400px; /* Adjust to match menu width */
   width: 100%;
   height: auto;
-  margin: 20px auto;
+  margin: 20px auto; /* Center the image */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 </style>
