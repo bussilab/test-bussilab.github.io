@@ -73,8 +73,8 @@ title: People
 
 .group-picture {
   display: block;
-  max-width: 300px; /* Adjust to match menu width */
-  width: 100%;
+  max-width: 600px; /* Set a reasonable max width */
+  width: 80%; /* Allow responsiveness but prevent it from being too large */
   height: auto;
   margin: 20px auto; /* Center the image */
   border-radius: 15px; /* Rounded corners */
